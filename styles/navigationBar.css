@@ -1,0 +1,442 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #182523;
+  box-shadow:
+  0 0 1px rgb(104, 199, 191),
+  0 0 2px rgb(78, 178, 185),
+  0 0 3px rgb(125, 221, 228),
+  0 0 4px rgb(56, 114, 111),
+  0 0 5px rgb(146, 238, 243);
+}
+
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+
+nav li {
+  height: 4rem;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: white;
+}
+
+nav a:hover {
+  background-color: #364e4b4b;
+}
+
+.header {
+  position: relative;
+  left: -100px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 500vh;
+  width: 250px;
+  z-index: 1000;
+  background-color: #182523b9;
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  
+  text-align:start;
+  margin-top: 0%;
+
+
+}
+
+.sidebar li {
+  width:100%;
+  margin-top: 100px;
+  margin-bottom: 100px; 
+}
+
+.sidebar a {
+  width:100%;
+  display: block; 
+  padding: 10px 0; 
+  text-decoration: none;
+  font-size: 70px;
+  color: white;
+  top: 0;
+}
+
+.sidebar a:hover {
+  background-color: #364e4b4b;
+}
+
+
+
+.hide-button{
+  position: relative;
+  top: -2%;
+  left: 44%;
+}
+
+.select-language {
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #e8f5f5;
+  font-family: 'Tektur', sans-serif;
+  margin-left: 8%;
+}
+
+
+
+.language-arrow {
+  position: relative;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  min-width: 180px;
+  cursor: pointer;
+  left: 65%;
+  
+}
+
+
+
+.dropdown-elements {
+  position: absolute;
+  right: 40%;
+  top: 104%;
+  min-height: 200px;
+  
+  min-width: 77px ;
+  font-weight: 500;
+  letter-spacing: 5px;
+  background: #182523;
+  border-radius: 3%;
+  border: 1px solid rgb(83, 247, 198);
+  border-top: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1;
+
+}
+
+
+
+.dropdown-elements li {
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px;
+}
+
+.dropdown-elements li:hover {
+  color: rgb(66, 167, 141);
+  text-shadow: 0px 0 5px #000000;
+  background-color: #3e5c57;
+  
+}
+
+
+.dropdown:hover .dropdown-elements {
+  display:block;
+  cursor: pointer;
+  
+}
+
+.language-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+  font-size: 1.3rem;
+}
+.language-element {
+  position: relative;
+  list-style: none;
+  font-size: 1.1rem;
+  color: #e8f5f5;
+
+}
+
+.language-one {
+  position: relative;
+  top: 18px;
+  left: -15px;
+}
+
+.expandable-menu-container {
+  color: white;
+  font-size: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.expandable-language-list {
+  display: none;
+}
+
+.expandable-language-list li {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: #00000048;
+  font-size: 4rem;
+  letter-spacing: 10px;
+  margin-top: 0%;
+  line-height: 20px;
+}
+
+
+
+.menu-button {
+  display: none;
+}
+
+
+@media(max-width: 1000px){
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+    height: 130px;
+    margin-right: -50px;
+    
+  }
+
+ .sidebar{
+    background-color: #182523;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    display: none;
+    width: 30%;
+    right: 0;
+    margin-right: 0;
+    
+  }
+
+  .sidebar a {
+    margin-top: 0;
+    font-size: 5rem;
+  }
+
+  .sidebar li {
+    margin-top: 10px;
+  }
+  .fa-language {
+    font-size: 80px;
+    margin-right: -26px;
+    margin-left: 55px;
+  }
+
+  .expandable-menu-container {
+    margin-top: 10%;
+    font-size: 5rem;
+    margin-left: 12%;
+  }
+
+  .expandable-language-list li {
+    margin-top: -1%;
+    font-size: 4rem;
+  }
+ 
+  .hide-button {
+    top: 0%;
+    
+  }
+  .hide-button svg {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+
+
+
+@media(max-width: 853px) {
+  
+  .sidebar{
+    width: 100%;
+    
+  }
+  .sidebar a {
+    font-size: 2.5rem;
+  }
+  .expandable-menu-container {
+    margin-top: 2%;
+    font-size: 2.5rem;
+    margin-left: 2%;
+  }
+
+  .fa-language {
+    font-size: 3.3rem;
+  }
+
+  .expandable-language-list li {
+    font-size: 2.5rem;
+    margin-top: -8%;
+    line-height: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .menu-button{
+    height: 6.5rem;
+    width: 6.5rem;
+  }
+
+  .menu-button svg {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .hide-button svg {
+    height: 3rem;
+    width: 3rem;
+  }
+
+}
+
+
+
+@media(max-width: 768px) {
+  .sidebar a {
+    font-size: 5rem;
+  }
+  .expandable-menu-container {
+    
+    font-size: 5rem;
+    
+  }
+
+  .fa-language {
+    font-size: 5rem;
+  }
+
+  .expandable-language-list li {
+    font-size: 3.5rem;
+    margin-top: 6%;
+    
+  }
+
+  .hide-button svg{
+    margin-top: 1%;
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .menu-button{
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .menu-button svg {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media(max-width:430px) {
+  .sidebar a {
+    font-size: 4rem;
+  }
+  .expandable-menu-container {
+    
+    font-size: 4rem;
+    
+  }
+
+  .fa-language {
+    font-size: 5rem;
+  }
+
+  .expandable-language-list li {
+    font-size: 3.5rem;
+    margin-top: -2%;
+    
+  }
+
+  .menu-button {
+    height: 9rem;
+    width: 9rem;
+  }
+  .menu-button svg {
+    height: 7rem;
+    width: 7rem;
+  }
+  .hide-button svg{
+    margin-top: 2%;
+    height: 4rem;
+    width: 4rem;
+  }
+
+}
+
+@media(max-width: 280px) {
+  .sidebar a {
+    font-size: 3rem;
+  }
+  .expandable-menu-container {
+    
+    font-size: 3rem;
+    
+  }
+
+  .fa-language {
+    font-size: 3rem;
+  }
+
+  .expandable-language-list li {
+    font-size: 2rem;
+    margin-top: 6%;
+    
+  }
+
+  .hide-button svg{
+    margin-top: 2%;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .menu-button{
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .menu-button svg {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+
+
+@media (min--moz-device-pixel-ratio: 1.5),
+       (-o-min-device-pixel-ratio: 3/2),
+       (-webkit-min-device-pixel-ratio: 1.5),
+       (min-device-pixel-ratio: 1.5),
+       (min-resolution: 144dpi),
+       (min-resolution: 1.5dppx) {
+
+/* Retina rules! */
+
+}

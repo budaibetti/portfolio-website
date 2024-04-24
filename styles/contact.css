@@ -1,0 +1,182 @@
+.contact-me {
+  display: flex;
+  height: 100vh;
+  
+}
+
+.getInTouch {
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  min-width: 100vmin;
+  font-size: 60px;
+  color: transparent;
+  -webkit-text-stroke: 0.01vw #0ef8d1;
+  text-transform: uppercase;
+  font-family: 'Tektur', sans-serif;
+  letter-spacing: 5px;
+  text-shadow: 0 5px 5px  rgb(9, 27, 22),
+   0 0px 10px  rgb(29, 219, 86);
+  
+}
+
+.in {
+  margin: 0px 20px;
+  -webkit-text-stroke: 0.01vw #0fecfc;
+  text-shadow: 0 5px 45px  rgb(9, 17, 27),
+  0 5px 5px  rgb(9, 17, 27),
+  0 5px 25px  rgb(25, 202, 247)
+ ;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 2px 8px 0 rgb(108, 255, 152);
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+  max-height: 600px;
+  width: 600px;
+  border-radius: 10%;
+  margin-top: 5%;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+::placeholder {
+  color: rgb(104, 255, 124);
+  opacity: 1; 
+  font-size: 15px;
+  text-align: center;
+  
+}
+
+::-ms-input-placeholder { 
+  color: rgb(104, 255, 124);
+}
+
+.contact-inputs {
+  border: solid rgb(81, 253, 173);
+  height: 50px;
+  width: 550px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Poppin', sans-serif;
+  background: transparent;
+  color: rgb(30, 255, 124);
+  
+}
+
+.contact-form > textarea {
+  height: 300px;
+  border-radius: 5px;
+  overflow: auto;
+
+}
+
+.submit-btn {
+  margin-top: 20px;
+  height: 60px;
+  width: 100px;
+   
+  cursor: pointer;
+  border-radius: 20px;
+  border: solid rgb(55, 236, 55);
+  background: rgba(77, 74, 74, 0.548);
+  box-shadow: 0px 0px 2px 0 rgb(108, 255, 152);
+  color: rgb(33, 236, 118);
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.submit-btn:hover {
+  background-color: rgba(7, 7, 7, 0.514);
+  color: rgb(7, 255, 152);
+  
+}
+
+.contactIcons {
+  display: flex;
+  position: relative;
+  right: 25%;
+  top: 35%;
+  flex-direction: column;
+  min-width: 100px;
+  max-height: 300px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  font-size: 60px;
+  
+}
+.contactIcons>i {
+  cursor: pointer;
+  color: transparent;
+  
+ 
+}
+
+.fa-linkedin  {
+  position: relative;
+  
+  -webkit-text-stroke: 0.1vw #03f5a4;
+  text-shadow: 0 5px 45px  rgb(9, 17, 27),
+  0 5px 15px  rgb(17, 43, 35),
+  0 5px 25px  rgb(147, 255, 214)
+ ;
+ margin-bottom: 40px;
+
+
+
+}
+
+
+
+.fa-whatsapp {
+  position: relative;
+  
+  -webkit-text-stroke: 0.1vw #13ffb8;
+  text-shadow: 0 5px 45px  rgb(9, 17, 27),
+  0 5px 2px  rgb(9, 27, 22),
+  0 5px 25px  rgb(42, 255, 131);
+
+ 
+}
+
+
+
+.fa-square-facebook {
+  position: relative;
+  top: -15%;
+  -webkit-text-stroke: 0.1vw #74d7ff;
+  text-shadow: 0 5px 45px  rgb(9, 17, 27),
+  0 5px 25px  rgb(9, 17, 27),
+  0 5px 35px  rgb(139, 191, 255)
+ ;
+}
+
+
+
+.fa-github {
+  position: relative;
+  top: 15%;
+  -webkit-text-stroke: 0.1vw #74d7ff;
+  text-shadow: 0 5px 45px  rgb(9, 17, 27),
+  0 5px 15px  rgb(9, 17, 27),
+  0 5px 35px  rgb(139, 191, 255)
+ ;
+  
+}
+
+
+

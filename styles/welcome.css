@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+.welcome-page {
+  height: 100vh;
+  margin-top: 0%;
+}
+
+.resume-pic-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: -85%;
+  left: 10%;
+  width:550px;
+  
+  
+padding: 20px;
+}
+
+
+  .resume-pic {
+    display: inline-block;
+    margin-top: 1%;
+    max-width: 60%;
+    height: auto;
+    background: rgba(132, 143, 150, 0.932);
+    border-radius: 10px;
+    border-top-right-radius: 90px ;
+    border-bottom-left-radius: 90px ;
+    padding-left: 30px;
+    padding-right: 2px;
+    box-shadow: 0 0 12px rgba(153, 241, 234, 0.863);
+  }
+  
+  .download-cv-btn, .message-me-btn{
+    padding: 18px;
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: #d4d8d7;
+    border-color: aliceblue;
+    box-shadow:  0 0 15px rgba(104, 186, 189, 0.781); 
+    color: rgb(30, 48, 45);
+    margin-top: 55px;
+    margin-left: 30px;
+    transition: 0.1s;
+    }
+
+    .download-cv-btn:hover, .message-me-btn:hover {
+      background: rgb(62, 83, 75);
+      color: #edf5f3;
+      border-color: aliceblue;
+    box-shadow:
+    0 0 10px rgb(56, 114, 111),
+    0 0 25px rgb(104, 186, 189); 
+
+    }
+
+    .button-container{
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: space-around;
+      width: 500px;
+      left: -5%;
+    }
+
+    .fa-comment-dots{
+      font-size: 18px;
+      margin-left: 5px;
+    }
+
+    .fa-arrow-down {
+      margin-left: 5px;
+    }
+    .welcome-div {
+      position: relative;
+      font-family: 'Tektur', sans-serif;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      right: 5%;
+      left: 45%;
+      max-width: 50%;
+     
+      
+    }
+
+    .welcome-text {
+      font-size: 40px;
+      margin-top: 25%;
+      width: 500px;
+    }
+
+    .welcome {
+      position: absolute;
+      display: flex;
+      font-size: 100px;
+      font-weight: 300;
+      top: 15%;
+      left: 20%;
+      align-items: center;
+      justify-content: center;
+       margin: 0;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 5px rgb(125, 233, 218),
+      0 0 8px rgb(129, 233, 200),
+      0 0 10px rgb(26, 44, 38),
+      0 0 15px rgb(124, 219, 187),
+      0 0 21px rgb(30, 56, 48);
+      color: #feffff;
+      animation: glitch 0.5s linear infinite;
+    }
+
+    @keyframes glitch{
+      2%,64%{
+        transform: translate(0.5px,0) skew(0deg);
+      }
+      4%,60%{
+        transform: translate(-0.5px,0) skew(0deg);
+      }
+      62%{
+        transform: translate(0,0) skew(5deg); 
+      }
+    }
+
+.welcome::before,.welcome::after{
+  content: 'Welcome';
+  position: absolute;
+  left: 0;
+  
+}
+
+.welcome::before{
+  animation: glitchTop 1.5s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 47%, 0 47%, 0 47%, 0 47%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 47%, 0 47%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-1px);
+  }
+  4%,60%{
+    transform: translate(-2px,1px);
+  }
+  62%{
+    transform: translate(15px,-1px) skew(-66deg); 
+  }
+}
+
+.welcome::after{
+  animation: glitchBotom 3s linear infinite;
+  clip-path: polygon(0 57%, 100% 57%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 57%, 100% 57%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-32px,5px) skew(51deg); 
+  }
+}
+
+.introduction-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  min-width: 600px;
+  height: 490px;
+  margin-top: -5%;
+  font-size: 40px;
+  
+}
+
+.to-my, .introduction, .I-am {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.to-my, .introduction {
+  min-width: 650px;
+  height: 80px;
+  font-size: 50px;
+  color: rgb(254, 255, 255);
+  text-shadow:
+      0 0 5px rgb(44, 122, 96),
+      0 0 8px rgb(44, 110, 88),
+      0 0 10px rgb(119, 206, 177);
+}
+
+.introduction {
+  width: 90%;
+  border-radius: 20px;
+  background-color: #19191a;
+  
+}
+
+
+.to-my-typewrite {
+  overflow: hidden; 
+  border-right: .10em solid rgb(8, 106, 109); 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .12em; 
+  animation: 
+    typing 8s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(65, 255, 239); }
+}
+
+
+
+.bettina-budai {
+  position: relative;
+  display: flex;
+  letter-spacing: 0.1em;
+  color: #e3f8f3;
+  text-transform: uppercase ;
+  font-size: 45px;
+  -webkit-text-stroke: 0.01vw #6babc0;
+  font-weight: 800;
+  text-shadow:
+     
+      0 0 2px #00b3ff,
+      0 0 5px #00b3ff;
+      color: #f8fcf9;
+  
+}
+
+
+
+
+.name-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+
+
+
+.I-am {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 5%;
+  width: 850px;
+}
+.I-am p {
+  text-shadow:
+      0 0 2px rgb(44, 122, 96),
+      0 0 8px rgb(44, 110, 88),
+      0 0 9px rgb(119, 206, 177);
+      color: #feffff;
+      font-size: 35px;
+}
+
+.innerIam {
+  margin-left: 3%;
+  font-size: 38px;
+  font-weight: 300;
+  text-shadow:
+      0 0 2px #00b3ff,
+      0 0 8px #00b3ff,
+      0 0 9px #00b3ff;
+      color: #f8fcf9;
+}
+.cursor {
+  position: relative;
+  top: -5%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  color:aqua;
+  animation: blink 1s linear infinite;
+  font-size: 50px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}
+
+
+.my-name-p {
+  display: flex;
+flex-direction: row;  
+}
+
+.my-name {
+  position: relative;
+  right: 8%;
+}

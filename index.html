@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content=" width=device-width",
+    initial-scale = "1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./styles/openingPage.css">
+    <link rel="stylesheet" href="./styles/navigationBar.css">
+    <link rel="stylesheet" href="./styles/about-me.css">
+    <link rel="stylesheet" href="./styles/welcome.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li class="hide-button" onclick=hideSidebar()>
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 -960 960 960" width="100" fill = "white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <i class="fa-solid fa-address-card"></i>
+            About me
+        </a>
+        </li>
+        <li>
+          <a href="#portfolio">
+            <i class="fa-solid fa-briefcase"></i>
+            Portfolio
+        </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            Contact me
+        </a>
+        </li>
+
+  <li>
+    <div id = "expandable" class=" expandable-menu-container">
+      <ul>
+        <li id="select-language" class="expandable-menu" onclick=showLangOptions()>
+          <i class="fa-solid fa-language"></i>
+           Select language </li> 
+              </ul>
+              
+      
+  
+    <div class="expandable-elements">
+        <ul class="expandable-language-list">
+              <li id="expandable-language-two" class="expandable-element">Italian</li>
+              <li id="expandable-language-three" class="expandable-language-element">Hungarian</li>
+           </ul>
+        </div>
+            
+      </ul>
+
+      <ul class="header">
+        <li class="hideOnMobile">
+          <a href="#about">
+            <i class="fa-solid fa-address-card"></i>
+            About me
+        </a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#portfolio">
+            <i class="fa-solid fa-briefcase"></i>
+            Portfolio
+        </a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            Contact me
+        </a>
+        </li>
+
+        <li class="hideOnMobile">
+          <div id = "dropdown" class=" dropdown">
+            <i class="fa-solid fa-globe"></i>
+              <ul class="dropdown-list">
+                <li id="language-one" class="language-element language-one">EN </li> 
+              </ul>
+              
+  
+            <div class="language-arrow">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="3" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/>
+                </svg>
+              </div>
+            
+  
+      <div class="dropdown-elements">
+            <ul class="language-list">
+              <li id="language-two" class="language-element">IT</li>
+              <li id="language-three" class="language-element">HU</li>
+            </ul>
+        </div>
+  </li>
+
+    <li  class= "menu-button" onclick= showSideBar()>
+    <a href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" height="80" viewBox="0 -960 960 960" width="80" fill = "white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </a>
+  </li>
+
+ 
+        
+ </ul>
+</nav>
+
+
+    <section class="main-div">
+      <div class="circle">
+
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      
+      </div>
+
+      <div class="circle2">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      
+      </div>
+      <div class="name" id="name">
+        <div class="word">Bettina </div>
+        <div class="word">Budai</div>
+
+      </div>
+
+      
+      
+
+    </section>
+
+   <section class="welcome-page" >
+    <div class="welcome-div">
+      <div class="welcome-text"> 
+        <div class="welcome">
+          Welcome
+        </div> 
+       </div>
+
+      <div class="introduction-container">
+        <div class="to-my">
+          <p class="to-my-typewrite">...to my website</p>
+        </div>
+
+        <div class="introduction">
+          <p class="my-name-p"> <span class="my-name"> My name is</span>
+            <div class="name-box">
+            <div class="lightbar"></div>
+            
+            <span class="bettina-budai">Bettina Budai</span></p>
+
+          
+            </div>
+             
+        </div>
+
+        <div class="I-am">
+           <p >I am a(n) </p><span class="innerIam" id="typewriter"></span><span  class= "cursor"id="cursor">|</span>
+        </div>
+      
+      </div>
+      
+    </div>
+     
+
+      <div class="resume-pic-container">
+        <img class="resume-pic" src="./resume/ResumePicBB.png">
+        <div class="button-container">
+        <button class="download-cv-btn">
+          Download CV
+          <i class="fa-solid fa-arrow-down"></i>
+        </button>
+        <button class="message-me-btn">
+          Message me
+          <i class="fa-regular fa-comment-dots"></i>
+        </button>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="about-me" id="about">
+
+      
+      <h1 class="section-title">About me </h1>
+
+      
+
+      
+      <div class="language-knowledge">
+        <p class="skills-title">Language Knowledge</p>
+        <p class="lang">
+          Hungarian:
+        </p>
+       <p class="lang">English: </p> 
+        <p class="lang">
+          Italian:
+        </p>
+        <p class="lang">
+          Spanish:
+        </p>
+      </div>
+
+      <div class="frontend-knowledge">
+        <p class="skills-title"> Frontend Development Skills</p>
+        <p class="frontend">
+          <i class="fa-brands fa-html5"></i>
+        HTML 
+      </p>
+       <p class="frontend">
+        <i class="fa-brands fa-css3-alt"></i>
+        CSS
+         </p> 
+        <p class="frontend">
+          <i class="fa-brands fa-js"></i>
+          JavaScript
+        </p>
+        <p class="frontend">
+          <i class="fa-brands fa-react"></i>
+
+          React.js
+        </p>
+
+      </div>
+
+      <div class="translation-experience">
+        <p class="experience-title">
+          Translation Experience
+
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vero. Quibusdam blanditiis illum porro obcaecati aliquid, at animi enim velit assumenda deleniti illo, natus quam sapiente consequatur ducimus, rem quo?</p>
+
+      </div>
+
+      <div class="hobby">
+        <p>Hobbies</p>
+        <li class="list">Coding</li>
+        <li class="list">Yoga</li>
+        <li class="list">Travelling</li>
+        <li class="list">Saving baby turtles</li>
+      </div>
+     
+      <div class="photo-swipe">
+
+      <div class="photo-group">
+
+      <div class="travel-cards" data-index="0" data-status="active">
+        <div class="travel-photo"></div>
+        <div class="travel-photo"></div>
+        <div class="travel-photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="1" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="2" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="3" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="4" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+    </div>
+
+  <div class="like-dislike-btn">
+
+    <button id="dislike-btn">
+      <i class="fa-solid fa-x"></i>
+    </button>
+
+    <button id="like-btn" class="like-btn">
+      <i class="fa-solid fa-heart"></i>
+    </button>
+
+  </div>
+  </div>   
+    </section>
+
+    <section class="portfolio-section" id="portfolio">
+
+      <div class="portfolio-container">
+
+      <div class="work portfolio1"> <p>Portfolio 1</p></div>
+      <div class="work portfolio2"> <p>Portfolio 2</p></div>
+      <div class="work portfolio3"> <p>Portfolio 3</p></div>
+      <div class="work portfolio4">  <p>Portfolio 4</p></div>
+      <div class="work portfolio5"><p>Portfolio 5</p></div>
+    </div>
+    </section>
+
+    <section class="contact-me" id="contact">
+      
+      <h3 class="getInTouch">Get 
+        <span class="in"> in </span> 
+        touch</h3>
+
+      <div class="contactIcons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+
+      <div class="contact-container">
+        
+        <form action="" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your Email Address" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+
+        <button class="submit-btn">Submit</button>
+        </form>
+        
+        
+      </div>
+    </section>
+  
+    
+    
+  </body>
+</html>
