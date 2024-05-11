@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  top: -85%;
+  top: -80%;
   left: 10%;
   width:550px;
   
@@ -22,16 +22,16 @@ padding: 20px;
 
   .resume-pic {
     display: inline-block;
-    margin-top: 1%;
-    max-width: 60%;
+    margin-top: -3%;
+    max-width: 62%;
     height: auto;
-    background: rgba(132, 143, 150, 0.932);
+    background: #19191a9d;
     border-radius: 10px;
     border-top-right-radius: 90px ;
     border-bottom-left-radius: 90px ;
     padding-left: 30px;
     padding-right: 2px;
-    box-shadow: 0 0 12px rgba(153, 241, 234, 0.863);
+    box-shadow: 0 0 5px rgba(153, 241, 234, 0.863);
   }
   
   .download-cv-btn, .message-me-btn{
@@ -216,7 +216,7 @@ padding: 20px;
 .introduction {
   width: 90%;
   border-radius: 20px;
-  background-color: #19191a;
+  background-color: #19191ab2;
   
 }
 

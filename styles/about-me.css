@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,700;1,800;1,900&family=Tektur:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
 
 
 .about-me{
@@ -15,15 +17,18 @@
 
 .section-title{
   position: relative;
-  bottom: 43%;
+  bottom: 37%;
   left: 12%;
   font-family: 'Tektur', sans-serif;
    font-size: 40px;
   font-weight: 200;
-  color: rgb(243, 237, 237);
+  color: rgb(29, 247, 228);
   text-shadow: -2px 4px 4px rgba(12, 13, 14, 0.6);
   text-transform: uppercase;
   min-width: 200px;
+  letter-spacing: 5px;
+  padding: 5px;
+  background:rgba( 255, 255, 255, 0.18 );
 }
 
 
@@ -52,60 +57,70 @@
 
 .language-knowledge {
   position: relative;
-  top: -23%;
-  right: 8%;
+  top: -10%;
+  right: 15%;
   
 }
 
 .frontend-knowledge{
   position: relative;
-  top: -15%;
-  right: 5%;
+  top: 15%;
+  right: 12%;
+}
+
+.experience-title {
+  color: rgb(6, 255, 201);
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-family: "Tektur", cursive;
+  font-optical-sizing: auto;
+  background:rgba( 255, 255, 255, 0.18 );
+  padding: 5px;
+  text-shadow: -2px 4px 4px rgba(12, 13, 14, 0.6);
 }
 
 .translation-experience {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 25px;
-  width:450px;
-  background: rgba( 255, 255, 255, 0.2 );
-  box-shadow: 0 2px 5px 0 rgb(108, 255, 152);
-  backdrop-filter: blur( 1px );
-  -webkit-backdrop-filter: blur( 1px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-    font-weight: 500;
-    font-size: 18px;
-    font-family: 'Tektur', sans-serif;
-    color: rgb(247, 244, 244);
-    top: 24%;
-  right:30%;
-}
-
-.hobby {
-  display: flex;
-  position: relative;
-  top: 5%;
-  right: 28%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  background: rgba( 255, 255, 255, 0.2 );
-  box-shadow: 0 2px 5px 0 rgb(108, 255, 152);
+  padding: 35px;
+  font-family: "Playfair Display", sans-serif;
+  width:630px;
   backdrop-filter: blur( 1.5px );
   -webkit-backdrop-filter: blur( 1.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  font-weight: 500;
-  font-size: 18px;
-  font-family: 'Tektur', sans-serif;
+ border-radius: 2%;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(247, 244, 244);
+    text-align: justify;
+    top: 5%;
+  right:1%;
+  margin-top: 15px;
+  
+}
+.text-type {
+  color: rgb(6, 255, 201) ;
+  font-weight:1000;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 20px black;
   text-transform: uppercase;
-   color: rgb(247, 244, 244);
-  min-width: 300px;
+  font-size: 16px;
+  font-family: "Tektur", cursive;
+  font-optical-sizing: auto;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+.text-type-list {
+  text-indent: 15px;
+  margin: 20px;
+  line-height: 32px;
   list-style: none;
 }
+
 
 .skills-title {
   text-align: center;
@@ -126,264 +141,13 @@
 
 .fa-html5, .fa-css3-alt, .fa-js, .fa-react {
   text-shadow:
-  
-  0 0 3px rgb(255, 252, 252),
-  0 0 4px rgb(101, 204, 170);
+  0 0 5px rgba(255, 252, 252, 0.705),
+  0 0 5px rgba(101, 204, 170, 0.712);
   color: #0e1111;
   font-size: 20px;
   margin-right: 8px;
 }
 
-.travel-cards {
-  width: 32vmin;
-  transition: transform 400ms ease;
-}
-.travel-photo {
-  cursor: pointer;
-  width: 36vmin;
-  height: auto;
-  aspect-ratio: 9/16;
-  background-color: white;
-  border-radius: 1vmin;
-  position: absolute;
-  
-  transition: transform 400ms cubic-bezier(.05,.45,.25,.97);
-  box-shadow:
-  0 0 1px #fff,
-  0 0 2px #fff,
-  0 0 3px rgb(101, 204, 170),
-  0 0 4px rgb(101, 204, 170),
-  0 0 5px rgb(101, 204, 170),
-  0 0 8px rgb(101, 204, 170),
-  0 0 25px rgb(101, 204, 170);
-  
-}
-
-.travel-photo:nth-child(1) {
-  background-color: rgb(221, 240, 240);
-  transform: translateX(-10%) rotate(-5deg);
-  background-image: url('../Travel/Lisbon-left.jpg');
-  background-size: cover;
-}
-
-.travel-photo:nth-child(2) {
-  background-color: aqua;
-  transform: translateX(30%) rotate(5deg);
-  background-image: url('../Travel/Lisbon-right.jpg');
-  background-size: cover;
-}
-
-.travel-photo:nth-child(3) {
-  background-color: rgb(172, 224, 224);
-  transform: translateX(-6) rotate(-5deg);
-  background-image: url('../Travel/Lisbon-middle.jpeg');
-  background-size: cover;
-}
-
-.travel-cards[data-index="1"] >.travel-photo:nth-child(1) {
-  
-  background-image: url('../Travel/monaco-left.jpg');
-  
-}
-
-.travel-cards[data-index="1"] >.travel-photo:nth-child(2) {
-  
-  background-image: url('../Travel/monaco-right.jpg');
-  
-}
 
 
 
-.travel-cards[data-index="1"] >.travel-photo:nth-child(3) {
-  
-  background-image: url('../Travel/monaco-middle.jpg');
-}
-
-
-
-.travel-cards[data-index="2"] >.travel-photo:nth-child(1) {
-  
-  background-image: url('../Travel/Mallorca-middle.jpeg');
-  
-}
-
-.travel-cards[data-index="2"] >.travel-photo:nth-child(2) {
-  
-  background-image: url('../Travel/Mallorca-right.jpg');
-  
-}
-
-.travel-cards[data-index="2"] >.travel-photo:nth-child(3) {
-  
-  background-image: url('../Travel/Mallorca-left.jpeg');
-  
-}
-
-.travel-cards[data-index="3"] >.travel-photo:nth-child(1) {
-  
-  background-image: url('../Travel/Italy-left.jpeg');
-  
-}
-
-.travel-cards[data-index="3"] >.travel-photo:nth-child(2) {
-  
-  background-image: url('../Travel/Italy-right.jpeg');
-  
-}
-
-.travel-cards[data-index="3"] >.travel-photo:nth-child(3) {
-  
-  background-image: url('../Travel/Italy-middle.jpg');
-}
-
-.travel-cards[data-index="4"] >.travel-photo:nth-child(1) {
-  
-  background-image: url('../Travel/Nizza-left.jpg');
-  
-}
-
-.travel-cards[data-index="4"] >.travel-photo:nth-child(2) {
-  
-  background-image: url('../Travel/Nizza-right.jpg');
-  
-}
-
-.travel-cards[data-index="4"] >.travel-photo:nth-child(3) {
-  
-  background-image: url('../Travel/Nizza-middle.jpg');
-}
-
-
-
-.travel-cards:hover> .travel-photo:nth-child(1) {
-  position: absolute;
-  transform: translate(-60%, 11%) rotate(-20deg);
- 
-}
-
-.travel-cards:hover> .travel-photo:nth-child(2) {
- 
-  position: absolute;
-  cursor: pointer;
-  transform: translate(10%, 2%) rotate(-10deg);
-}
-
-.travel-cards:hover> .travel-photo:nth-child(3) {
-
-  position: absolute;
-  cursor: pointer;
-  transform: translate(80%, 5%) rotate(15deg);
-}
-
-
-
-.like-dislike-btn{
-  width: 32vmin;
-  margin-top: 65vmin;
-  margin-left: -125%;
-  display: flex;
-  justify-content: space-around;
-  padding: 0vmin 2vmin;
-}
-
-.like-dislike-btn> button {
-  font-size: 4.5vmin;
-  transition: 0.5s;
-  display: grid;
-  place-items: center;
-
-  border-radius: 100%;
-  color: rgb(88, 252, 252);
-  background-color: transparent;
-  height: 10vmin;
-  width: 10vmin;
-  cursor: pointer;
-  border: none;
-  
-
-  text-shadow:
-
-  0 0 5px rgb(101, 204, 170),
-  0 0 6px rgb(101, 204, 170),
-  0 0 8px rgb(101, 204, 170) ;
-
-  
-  
-
-}
-
-.fa-heart {
-  color: rgb(255, 255, 255);
-}
-
-.fa-x {
-  font-weight: 1000;
- 
-}
-
-.like-dislike-btn> button:hover {
-  background: rgb(72,87,83);
-background: linear-gradient(175deg, rgb(35, 37, 37) 27%, rgb(75, 130, 133) 60%, rgb(39, 70, 64) 68%);
-
-box-shadow:
-  0 0 5px #fff,
-  0 0 8px #fff,
-  0 0 5px rgb(101, 204, 170),
-  0 0 6px rgb(101, 204, 170),
-  0 0 8px rgb(101, 204, 170),
-  0 0 10px rgb(101, 204, 170),
-  0 0 25px rgb(101, 204, 170);
-}
-
-.photo-group {
-  width: 32vmin;
-  aspect-ratio: 9/16;
-  transition: transform 500ms ease;
-  position: absolute;
-  top: 8%;
-  right: 20%;
-}
-
-
-
-.travel-cards[data-status="unknown"] {
-  transform: scale(0);
-  transition: none;
-}
-
-.travel-cards[data-status="active"] {
-  transition-delay: 500ms;
-}
-
-.travel-cards[data-status="after"] {
-  transform: translateX(65%) scale(0);
-}
-
-.travel-cards[data-status="before"] {
-  transform: translateX(-65%) scale(0);
-}
-
-.travel-cards[data-status="becoming-active-from-after"] {
-  transform: translateX(65%) scale(0);
-  transition: none;
-}
-
-.travel-cards[data-status="becoming-active-from-before"] {
-  transform: translateX(-65%) scale(0);
-  transition: none;
-}
-
-.photo {
-  background-color: rgba(255, 255, 255, 0.05);
-  position: absolute;
-  transition: transform 800ms cubic-bezier(.05,.43,.25,.95);
-  
-  background-position: center;
-  background-size: cover;
-}
-
-
-
-.list {
-  margin-top: 20px;
-}

@@ -4,13 +4,8 @@ nav {
   left: 0;
   width: 100%;
   z-index: 999;
-  background-color: #182523;
-  box-shadow:
-  0 0 1px rgb(104, 199, 191),
-  0 0 2px rgb(78, 178, 185),
-  0 0 3px rgb(125, 221, 228),
-  0 0 4px rgb(56, 114, 111),
-  0 0 5px rgb(146, 238, 243);
+  background-color: #182523ad;
+  
 }
 
 nav ul{
@@ -123,19 +118,20 @@ nav a:hover {
 .dropdown-elements {
   position: absolute;
   right: 40%;
-  top: 104%;
+  top: 100%;
   min-height: 200px;
   
   min-width: 77px ;
   font-weight: 500;
   letter-spacing: 5px;
-  background: #182523;
+  background: #1822209f;
   border-radius: 3%;
   border: 1px solid rgb(83, 247, 198);
   border-top: none;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   display: none;
   z-index: 1;
+  padding-bottom: 50px;
 
 }
 
