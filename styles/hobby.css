@@ -4,6 +4,77 @@
   display: flex;
 }
 
+.work-experience-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 43%;
+  top: 15%;
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+ 
+ border-radius: 2%;
+  height: 450px;
+  width: 500px;
+  flex-direction: column;
+  color: aliceblue;
+}
+
+.work-experience-title {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-activity> h3 {
+  color: rgb(224, 243, 243);
+  position: relative ;
+  left: -40%;
+  margin-bottom: 10px;
+}
+.current-workplace {
+  color: aqua;
+  text-shadow: -2px 4px 4px rgba(12, 13, 14, 0.6);
+  background:rgba( 255, 255, 255, 0.18 );
+  padding: 5px;
+  line-height: 60px;
+  position: relative;
+  left: 7%;
+  letter-spacing: 5px;
+}
+.work-activity-list {
+  list-style: none;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: row;
+  color: rgb(6, 255, 201) ;
+
+}
+.counter-element {
+  margin-left: 10px;
+  padding: 20px;
+  font-size: 1.3rem;
+
+}
+
+.time-unit {
+  position: relative;
+  left: -15%;
+  font-family: "Tektur", sans-serif;
+  color: aliceblue;
+}
+
+.activity-number {
+  color: rgb(6, 255, 201) ;
+  font-weight: 600;
+}
+
+
 .travel-cards {
   transition: transform 400ms ease;
 }
@@ -149,7 +220,7 @@
 .like-dislike-btn{
   width: 32vmin;
   margin-top: 23vmin;
-  margin-left: -17%;
+  margin-left: -220%;
   display: flex;
   justify-content: space-around;
   padding: 0vmin 2vmin;
@@ -210,7 +281,7 @@ box-shadow:
   transition: transform 500ms ease;
   position: relative;
   top: 10%;
-  right: 20%;
+  right: 220%;
 }
 
 
@@ -254,30 +325,31 @@ box-shadow:
 .hobby {
   display: flex;
   position: relative;
-  top: 40%;
-  left: 50%;
+  top: 20%;
+  left: 45%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 10px;
-  background: rgba( 255, 255, 255, 0.2 );
-  box-shadow: 0 2px 5px 0 rgb(108, 255, 152);
   backdrop-filter: blur( 1.5px );
   -webkit-backdrop-filter: blur( 1.5px );
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
   font-weight: 500;
-  font-size: 16px;
+  font-size: 17px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
    color: rgb(247, 244, 244);
   min-width: 250px;
   max-height: 250px;
   list-style: none;
+  transform: rotate(6deg);
 }
 .hobby > h3{
   color: aquamarine;
+  text-shadow: -2px 4px 4px rgba(12, 13, 14, 0.6);
+  background:rgba( 255, 255, 255, 0.18 );
   letter-spacing: 3px;
+  padding: 5px;
 }
 .hobbies-list{
   list-style: none;
