@@ -16,8 +16,17 @@
     <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/hobby.css">
 
-
-    <script src="script.js" defer></script>
+  <script src="script.js" defer></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "ORvWABDExYUE13j9r",
+  });
+})();
+</script>
   </head>
 
   <body>
@@ -420,12 +429,14 @@
 
       <div class="contact-container">
         
-        <form action="" class="contact-form">
-          <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-        <input type="email" name="email" placeholder="Your Email Address" class="contact-inputs" required>
-        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <form  class="contact-form">
+        
 
-        <button class="submit-btn">Submit</button>
+          <input type="text" id="contactName" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email"  id="email" placeholder="Your Email Address" class="contact-inputs" required>
+        <textarea id="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+
+        <button type="submit" onclick="sendMail(event);"class="submit-btn">Submit</button>
         </form>
         
         

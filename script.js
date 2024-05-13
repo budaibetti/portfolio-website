@@ -146,3 +146,18 @@ function formatTime(time) {
 setInterval(counter, 1000);
 
 counter();
+
+//CONTACT FORM FUNCTION
+
+function sendMail(event) {
+  event.preventDefault();
+  let parms = {
+    name: document.getElementById("contactName").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs
+    .send("service_ddc0r7a", "template_5bc79in", parms)
+    .then(alert("Email Sent/ L'e-mail è stata inviata/ Üzenet elküldve"));
+}
