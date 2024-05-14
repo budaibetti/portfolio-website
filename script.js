@@ -6,6 +6,9 @@ const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
+//scroll animation library
+AOS.init();
+
 //typewriter effect
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));

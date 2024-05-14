@@ -15,18 +15,25 @@
     <link rel="stylesheet" href="./styles/portfolio.css">
     <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/hobby.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
   <script src="script.js" defer></script>
     <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script type="text/javascript">
 (function(){
   emailjs.init({
     publicKey: "ORvWABDExYUE13j9r",
   });
 })();
+
 </script>
+
+
   </head>
 
   <body>
@@ -204,17 +211,20 @@
     </div>
      
 
-      <div class="resume-pic-container">
+      <div  class="resume-pic-container">
         <img class="resume-pic" src="./resume/ResumePicBB.png">
         <div class="button-container">
         <button class="download-cv-btn">
           Download CV
           <i class="fa-solid fa-arrow-down"></i>
         </button>
-        <button class="message-me-btn">
-          Message me
-          <i class="fa-regular fa-comment-dots"></i>
-        </button>
+        <a href="#contact">
+          <button class="message-me-btn">
+            Message me
+            <i class="fa-regular fa-comment-dots"></i>
+          </button>
+        </a>
+        
         </div>
         
       </div>
@@ -228,7 +238,9 @@
       
 
       
-      <div class="language-knowledge">
+      <div data-aos="fade-right" 
+      data-aos-duration="3000"
+      class="language-knowledge">
         <p class="skills-title">Language Knowledge</p>
         <p class="lang">
           Hungarian: Native
@@ -242,7 +254,9 @@
         </p>
       </div>
 
-      <div class="frontend-knowledge">
+      <div data-aos="fade-left"
+      data-aos-duration="3000"
+      class="frontend-knowledge">
         <p class="skills-title"> Frontend Development Skills</p>
         <p class="frontend">
           <i class="fa-brands fa-html5"></i>
@@ -264,7 +278,9 @@
 
       </div>
 
-      <div class="translation-experience">
+      <div data-aos="zoom-in-up"
+      data-aos-duration="3000"
+       class="translation-experience">
         
           <h3 class="experience-title">Translation Experience</h3>
 
@@ -298,7 +314,10 @@
 
     <section class="hobbies-section">
 
-      <div class="work-experience-counter">
+      <div 
+      data-aos="zoom-out-up"
+      data-aos-duration="3000"
+      class="work-experience-counter">
 
         <div class="work-experience-title">
         <h2> <span class="current-workplace">Current Workplace</span> <br> Tech Mahindra - Italian Team</h2><br>
@@ -335,7 +354,10 @@
 
       </div>
         
-      <div class="hobby">
+      <div data-aos="fade-right"
+      data-aos-duration="3000"
+
+      class="hobby">
 
         <h3>Hobbies</h3>
         <ul class="hobbies-list">
@@ -347,7 +369,7 @@
         
       </div>
      
-      <div class="photo-swipe">
+      <div  class="photo-swipe">
 
       <div class="photo-group">
 
@@ -421,10 +443,22 @@
         touch</h3>
 
       <div class="contactIcons">
-        <i class="fa-brands fa-square-facebook"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-        <i class="fa-brands fa-github"></i>
+        <a href="https://www.facebook.com/budaibett/" target="_blank"><i data-aos="fade-right"
+          data-aos-duration="2000"
+          class="fa-brands fa-square-facebook">
+        </i>
+        </a>
+        <a href="https://www.linkedin.com/in/bettina-budai-16765a2b9/" target="_blank">
+          <i data-aos="fade-left"
+          data-aos-duration="2000"class="fa-brands fa-linkedin">
+
+          </i>
+        </a>
+        <a href="https://github.com/budaibetti" target="_blank">
+          <i data-aos="fade-right"
+          data-aos-duration="2000" class="fa-brands fa-github"></i>
+        </a>
+       
       </div>
 
       <div class="contact-container">
