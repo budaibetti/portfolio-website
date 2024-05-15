@@ -35,47 +35,97 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgba(32, 31, 31, 0.39);
+  position: relative;
+  top: 1%;
+  left: 5%;
+  background: rgba(32, 31, 31, 0.788);
   box-shadow: 0 1px 3px 0 rgb(108, 255, 152);
   backdrop-filter: blur( 1px );
   -webkit-backdrop-filter: blur( 1px );
-  max-height: 600px;
-  width: 600px;
+  max-height: 650px;
+
+  width: 550px;
+  padding: 60px;
   border-radius: 10%;
   margin-top: 5%;
 }
 
 .contact-form {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+.inputBox {
+  position: relative;
+  height: 70px;
+}
+.inputBox input {
+  position: relative;
+  top: -50%;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: #02fff2;
+}
 
-::placeholder {
-  color: rgb(216, 240, 220);
-  opacity: 1; 
-  font-size: 15px;
-  text-align: center;
+.inputBox textarea {
+  margin-top: 0%;
+}
+
+
+.inputBox> span {
+  position: absolute;
+  left: 10%;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 0.9rem;
+  color: rgb(5, 255, 192);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s
+  cubic-bezier(0.05, 0.81, 0, 0.93);
   
 }
 
-::-ms-input-placeholder { 
-  color: rgb(214, 250, 219);
-}
+
+
 
 .contact-inputs {
   border: solid rgb(48, 240, 144);
   height: 50px;
-  width: 550px;
+  width: 500px;
   border-radius: 10px;
   padding: 10px;
-  margin: 10px;
+  margin: 30px;
   font-family: 'Poppin', sans-serif;
   background: transparent;
-  color: rgb(215, 243, 227);
   
 }
+
+
+.message-area {
+ 
+  height: 300px;
+}
+
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span {
+  font-size: 0.75rem;
+  transform: translateX(-2px)
+  translateY(-12px);
+  padding: 0 10px;
+  border-radius: 2px;
+  border-left: 2px solid rgb(2, 255, 179);
+  border-right: 2px solid rgb(2, 255, 179);
+  background: rgb(32, 31, 31);
+  letter-spacing: 3px;
+  color: #02ff9e;
+}
+
 
 .contact-form > textarea {
   height: 300px;
@@ -85,7 +135,7 @@
 }
 
 .submit-btn {
-  margin-top: 20px;
+  margin-top: 250px;
   height: 60px;
   width: 100px;
    

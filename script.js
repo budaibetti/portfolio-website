@@ -1,6 +1,7 @@
 const likeBtn = document.querySelector(".like-btn");
 const dislikeBtn = document.getElementById("dislike-btn");
 
+//Work-experience counter elements
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("minutes");
@@ -162,5 +163,5 @@ function sendMail(event) {
 
   emailjs
     .send("service_ddc0r7a", "template_5bc79in", parms)
-    .then(alert("Email Sent/ L'e-mail è stata inviata/ Üzenet elküldve"));
+    .then(alert("Email Sent\n L'e-mail è stata inviata\n Üzenet elküldve"));
 }

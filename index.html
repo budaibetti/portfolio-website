@@ -212,7 +212,9 @@
      
 
       <div  class="resume-pic-container">
-        <img class="resume-pic" src="./resume/ResumePicBB.png">
+        <img data-aos="flip-left"
+        data-aos-duration="2000"
+         class="resume-pic" src="./resume/ResumePicBB.png">
         <div class="button-container">
         <button class="download-cv-btn">
           Download CV
@@ -239,7 +241,7 @@
 
       
       <div data-aos="fade-right" 
-      data-aos-duration="3000"
+      data-aos-duration="2000"
       class="language-knowledge">
         <p class="skills-title">Language Knowledge</p>
         <p class="lang">
@@ -255,7 +257,7 @@
       </div>
 
       <div data-aos="fade-left"
-      data-aos-duration="3000"
+      data-aos-duration="2000"
       class="frontend-knowledge">
         <p class="skills-title"> Frontend Development Skills</p>
         <p class="frontend">
@@ -355,7 +357,7 @@
       </div>
         
       <div data-aos="fade-right"
-      data-aos-duration="3000"
+      data-aos-duration="2000"
 
       class="hobby">
 
@@ -461,15 +463,24 @@
        
       </div>
 
-      <div class="contact-container">
+      <div   class="contact-container">
         
         <form  class="contact-form">
         
-
-          <input type="text" id="contactName" placeholder="Your Name" class="contact-inputs" required>
-        <input type="email"  id="email" placeholder="Your Email Address" class="contact-inputs" required>
-        <textarea id="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-
+          <div class="inputBox">
+            <input type="text" id="contactName"  class="contact-inputs name-input" required>
+          <span> Your Name</span>
+          </div>
+          
+          <div class="inputBox">
+            <input type="email"  id="email"  class="contact-inputs email-input" required>
+        <span>Email Address</span>
+          </div>
+        <div class="inputBox">
+          <textarea id="message"  class="contact-inputs message-area" required></textarea>
+          <span class="message-span">Your Message</span>
+        </div>
+        
         <button type="submit" onclick="sendMail(event);"class="submit-btn">Submit</button>
         </form>
         
