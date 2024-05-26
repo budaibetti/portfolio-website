@@ -7,12 +7,26 @@
    margin-bottom: 0;
 }
 
+.projects-title {
+  color: aqua;
+  text-shadow: -2px 4px 4px rgba(12, 13, 14, 0.6);
+  background:rgba( 255, 255, 255, 0.18 );
+  position: relative;
+  top: -35%;
+  right: -30%;
+  padding: 5px;
+  letter-spacing: 3px;
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Tektur", sans-serif;
+}
 .portfolio-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  min-width: 70vmin;
-  padding: 30px;
+  justify-content: center;
+  padding: 40px;
+  max-width: 1100px;
 }
 
 
@@ -39,11 +53,11 @@
 .work::before {
     content: '';
     position: absolute;
-    width: 170px;
+    width: 780px;
     height: 140%;
-    border-radius: 20px;
-    background: linear-gradient(#02aaf8, #10ff1c);
-    transform: rotate(25deg);
+    border-radius: 10px;
+    background: linear-gradient(#00aeff, hsl(123, 100%, 51%));
+    transform: rotate(40deg);
     
 }
 
@@ -53,7 +67,7 @@
   content: '';
   position: absolute;
   background: #1a1a1d;
-  inset: 6px;
+  inset: 5px;
   border-radius: 10px;
  
 
@@ -62,23 +76,134 @@
 
 
 .portfolio1 {
-  margin-bottom: 10%;
+  margin-bottom: -10%;
+  margin-left: -20%;
+  margin-right: 8%;
+  padding: 38px;
 }
 
 .portfolio2 {
-  margin-bottom: 5%;
+  margin-bottom: -2%;
+  margin-left: -1%;
+  padding: 28px;
 }
 
-.portfolio3 {
-  margin-bottom: 0%;
+.project-pic {
+  position: relative;
+  right: -32%;
+  max-width: 42%;
+  height: auto;
+  z-index: 20;
 }
 
-.portfolio4 {
-  margin-bottom: -5%;
+
+
+.project-demo-btn, .project-github-btn, .repo-link {
+  z-index: 20;
+  position: relative;
+  left: -34%;
+  margin-top: 52%;
+  padding: 13px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+  border: solid rgb(55, 236, 55);
+  background: rgba(77, 74, 74, 0.548);
+  box-shadow: 0px 0px 2px 0 rgb(108, 255, 152);
+  color: rgb(33, 236, 118);
+  letter-spacing: 2px;
+  font-weight: 800;
+  transition: 0.5s;
 }
 
-.portfolio5 {
-  margin-bottom: -10%;
-  
+.repo-link {
+  color: none;
+  border: none;
+  text-decoration: none;
+  background: none;
+  box-shadow: none;
+  margin-top: 56%;
 }
+
+.project-demo-btn:hover, .project-github-btn:hover {
+  background-color: rgba(7, 7, 7, 0.815);
+}
+.app-title {
+  z-index: 20;
+  font-size: 1rem;
+  color: rgb(0, 225, 255);
+  text-shadow: -2px 4px 4px rgba(12, 13, 14, 0.6);
+  background:rgba( 255, 255, 255, 0.18 );
+  position: relative;
+  margin-top: -45%;
+  margin-bottom: 35px;
+  right: -20%;
+  min-width: 180px;
+}
+
+.recipe-app-title {
+  right: -40%;
+  margin-top: -75%;
+  min-width: 100px;
+  padding: 2px;
+}
+.app-description {
+  position: relative;
+  margin-top: -7%;
+  font-size: 0.85rem;
+  color: aliceblue;
+  min-width: 280px;
+  text-align: justify;
+  text-indent: 40px;
+  line-height: 22px;
+}
+
+.recipe-descr {
+  left: 12%;
+}
+
+.prog-lang, .slogan {
+  color: rgb(6, 255, 255);
+  text-shadow: -2px 4px 4px rgba(12, 13, 14, 0.6);
+  background:rgba( 255, 255, 255, 0.18 );
+  font-weight: 800;
+  padding: 3px;
+  letter-spacing: 2px;
+}
+
+.word-app-pic {
+  right: -37%;
+  width: 42%;
+}
+.word-app-title {
+  right:-35%;
+  margin-top: -60%;
+}
+.word-app-descr{
+  min-width: 330px;
+  margin-top: 0%;
+  left: 5%;
+  padding: 5px;
+}
+
+.word-btn {
+  margin-top: 16%;
+}
+
+.recipe-btn {
+  margin-top: 75%;
+}
+
+.demo{
+  margin-top: 75%;
+  margin-right: 30px;
+  border: solid rgb(16, 206, 253);
+  color: rgb(69, 238, 250);
+}
+
+.word-demo {
+  margin-top: 60%;
+}
+
 
