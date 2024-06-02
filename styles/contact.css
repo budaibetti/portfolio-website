@@ -9,8 +9,8 @@
   align-items:flex-start;
   justify-content: center;
   height: 80px;
-  font-size: 50px;
-  font-weight: 200;
+  font-size: 2.5rem;
+  font-weight: 400;
   color:  #1cfadcc7;
   text-transform: uppercase;
   font-family: 'Tektur', sans-serif;
@@ -71,6 +71,8 @@
 
 .inputBox textarea {
   margin-top: 0%;
+  color: #02fff2;
+
 }
 
 
@@ -126,6 +128,10 @@
   color: #02ff9e;
 }
 
+.inputBox input::placeholder,
+.inputBox textarea::placeholder {
+  color: transparent;
+}
 
 .contact-form > textarea {
   height: 300px;
@@ -181,12 +187,7 @@
   left: 160%;
   top: -10%;
   -webkit-text-stroke: 0.1vw #07ffff;
-  text-shadow: 0 5px 45px  rgb(9, 17, 27),
-  0 5px 15px  rgb(17, 43, 35),
-  
- ;
  margin-bottom: 40px;
-
  background:rgba(255, 255, 255, 0.219);
  padding: 20px;
   
@@ -203,10 +204,7 @@
   top: -40%;
   left: 160%;
   -webkit-text-stroke: 0.1vw #02fff2;
-  text-shadow: 0 5px 45px  rgb(9, 17, 27),
-  0 5px 25px  rgb(9, 17, 27),
   
- ;
  background:rgba(255, 255, 255, 0.219);
  padding: 20px;
   
@@ -219,10 +217,7 @@
   top: -10%;
   left: 150%;
   -webkit-text-stroke: 0.1vw #02ffff;
-  text-shadow: 0 5px 45px  rgb(9, 17, 27),
-  0 5px 15px  rgb(9, 17, 27),
-
- ;
+  
  background:rgba(255, 255, 255, 0.219);
  padding: 20px;
   

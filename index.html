@@ -248,39 +248,39 @@
       class="language-knowledge">
         <p class="skills-title">Language Knowledge</p>
         <p class="lang">
-          Hungarian: Native
+          Hungarian: <span class="level">Native</span>
         </p>
        <p class="lang">
-        English: C1 
+        English: <span class="level">C1</span>
       </p> 
         <p class="lang">
-          Italian: C1
+          Italian: <span class="level">C1</span>
         </p>
         <p class="lang">
-          Spanish: A1
+          Spanish: <span class="level">A1</span>
         </p>
       </div>
 
       <div data-aos="fade-left"
       data-aos-duration="1000"
       class="frontend-knowledge">
-        <p class="skills-title"> Frontend Development Skills</p>
+        <p class="skills-title"> Front-end Development Skills</p>
         <p class="frontend">
           <i class="fa-brands fa-html5"></i>
-        HTML 
+        HTML <hr class="level-line">
       </p>
        <p class="frontend">
         <i class="fa-brands fa-css3-alt"></i>
-        CSS
+        CSS <hr class="level-line-two">
          </p> 
         <p class="frontend">
           <i class="fa-brands fa-js"></i>
-          JavaScript
+          JS <hr class="level-line-three">
         </p>
         <p class="frontend">
           <i class="fa-brands fa-react"></i>
 
-          React.js
+          React.js <hr class="level-line-four">
         </p>
 
       </div>
@@ -436,12 +436,16 @@
 
       <div class="portfolio-container">
 
-      <div data-aos="fade-right" 
+      <div data-aos="flip-right" 
       data-aos-duration="1000" class="work portfolio1">
         <img class="project-pic recipe-pic" src="./images/Recipe-app.png">
         <h3 class="app-title recipe-app-title">Recipe app</h3>
         <p class="app-description recipe-descr">Built with <span class="prog-lang">React.js</span>, this app provides an extensive culinary database for food enthusiasts seeking variety and convenience. Users can efficiently search for recipes customized to their taste and dietary requirements, saving their favorites to a personalized collection with a single like. The app offers a smooth, user-friendly interface for discovering new dishes and returning to preferred recipes. <span class="slogan">Like, Eat, Love, Repeat</span> – transforming every meal into a delightful experience.</p>
-        <button class="project-demo-btn recipe-btn demo">Demo</button>
+
+        <a class="repo-link">
+          <button class="project-demo-btn recipe-btn demo">Demo</button>
+        </a>
+        
 
         <a class="repo-link " href="https://github.com/budaibetti/recipe-app" target="_blank">
           <button class="project-github-btn recipe-btn">
@@ -451,13 +455,17 @@
        
       </div>
 
-      <div data-aos="zoom-in-up" 
+      <div data-aos="flip-left" 
       data-aos-duration="1500"
       class="work portfolio2"> 
         <img class="project-pic word-app-pic " src="./images/Daily-word-app.png">
         <h3 class="app-title word-app-title">Daily Word Generator</h3>
         <p class="app-description word-app-descr">Developed using <span class="prog-lang">vanilla JavaScript</span>, the Daily Word app presents a fresh selection of words in <span class="slogan">English, Italian, and Hungarian</span>  each day, perfect for language enthusiasts looking to broaden their linguistic repertoire. Delve into the nuances of each word with comprehensive definitions, contextual example sentences, and usage insights. Effortlessly curate your own collection of favorite words for ongoing learning and reference. With its intuitive interface, exploring new languages and expanding your vocabulary becomes a seamless part of your daily routine.</p>
-        <button class="project-demo-btn word-btn demo word-demo">Demo</button>
+
+        <a  class=" repo-link">
+          <button class="project-demo-btn word-btn demo word-demo">Demo</button>
+
+        </a>
 
         <a class="repo-link" href="https://github.com/budaibetti/daily-word-generator" target="_blank">
           <button class="project-github-btn word-btn">Github</button>
@@ -476,19 +484,19 @@
 
       <div class="contactIcons">
         <a href="https://www.facebook.com/budaibett/" target="_blank"><i data-aos="fade-right"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
           class="fa-brands fa-square-facebook">
         </i>
         </a>
         <a href="https://www.linkedin.com/in/bettina-budai-16765a2b9/" target="_blank">
           <i data-aos="fade-left"
-          data-aos-duration="2000"class="fa-brands fa-linkedin">
+          data-aos-duration="1500"class="fa-brands fa-linkedin">
 
           </i>
         </a>
         <a href="https://github.com/budaibetti" target="_blank">
           <i data-aos="fade-right"
-          data-aos-duration="2000" class="fa-brands fa-github"></i>
+          data-aos-duration="1500" class="fa-brands fa-github"></i>
         </a>
        
       </div>
@@ -506,6 +514,7 @@
             <input type="email"  id="email"  class="contact-inputs email-input" required>
         <span>Email Address</span>
           </div>
+
         <div class="inputBox">
           <textarea id="message"  class="contact-inputs message-area" required></textarea>
           <span class="message-span">Your Message</span>

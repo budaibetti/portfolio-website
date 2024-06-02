@@ -12,8 +12,8 @@
   text-shadow: -2px 4px 4px rgba(12, 13, 14, 0.6);
   background:rgba( 255, 255, 255, 0.18 );
   position: relative;
-  top: -35%;
-  right: -30%;
+  top: -37%;
+  right: -15%;
   padding: 5px;
   letter-spacing: 3px;
   font-size: 2.3rem;
@@ -79,19 +79,20 @@
   margin-bottom: -10%;
   margin-left: -20%;
   margin-right: 8%;
-  padding: 38px;
+  padding: 25px;
 }
 
 .portfolio2 {
-  margin-bottom: -2%;
+  margin-bottom: -5%;
   margin-left: -1%;
-  padding: 28px;
+  padding: 20px;
 }
 
 .project-pic {
   position: relative;
-  right: -32%;
+  right: -37%;
   max-width: 42%;
+  top: 10%;
   height: auto;
   z-index: 20;
 }
@@ -102,7 +103,7 @@
   z-index: 20;
   position: relative;
   left: -34%;
-  margin-top: 52%;
+  margin-top: 65%;
   padding: 13px;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -124,6 +125,7 @@
   background: none;
   box-shadow: none;
   margin-top: 56%;
+  
 }
 
 .project-demo-btn:hover, .project-github-btn:hover {
@@ -131,36 +133,36 @@
 }
 .app-title {
   z-index: 20;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: rgb(0, 225, 255);
   text-shadow: -2px 4px 4px rgba(12, 13, 14, 0.6);
   background:rgba( 255, 255, 255, 0.18 );
   position: relative;
-  margin-top: -45%;
+  margin-top: -50%;
   margin-bottom: 35px;
   right: -20%;
   min-width: 180px;
 }
 
 .recipe-app-title {
-  right: -40%;
+  right: -10%;
   margin-top: -75%;
-  min-width: 100px;
+  min-width: 120px;
   padding: 2px;
 }
 .app-description {
   position: relative;
-  margin-top: -7%;
-  font-size: 0.85rem;
+  margin-top: -17%;
+  font-size: 0.8rem;
   color: aliceblue;
-  min-width: 280px;
+  min-width: 250px;
   text-align: justify;
   text-indent: 40px;
   line-height: 22px;
 }
 
 .recipe-descr {
-  left: 12%;
+  left: 17%;
 }
 
 .prog-lang, .slogan {
@@ -173,12 +175,14 @@
 }
 
 .word-app-pic {
-  right: -37%;
+  right: -39%;
+  margin-top: 7%;
   width: 42%;
 }
 .word-app-title {
-  right:-35%;
-  margin-top: -60%;
+  right:-15%;
+  margin-top: -65%;
+  min-width: 200px;
 }
 .word-app-descr{
   min-width: 330px;
@@ -188,22 +192,22 @@
 }
 
 .word-btn {
-  margin-top: 16%;
+  margin-top: 35%;
 }
 
 .recipe-btn {
-  margin-top: 75%;
+  margin-top: 90%;
 }
 
 .demo{
-  margin-top: 75%;
-  margin-right: 30px;
+  margin-top: 80%;
+  margin-right: 10px;
   border: solid rgb(16, 206, 253);
   color: rgb(69, 238, 250);
 }
 
 .word-demo {
-  margin-top: 60%;
+  margin-top: 55%;
 }
 
 

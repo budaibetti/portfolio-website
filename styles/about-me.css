@@ -44,7 +44,7 @@
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Tektur', sans-serif;
    color: rgb(247, 244, 244);
 
@@ -57,16 +57,29 @@
 
 .language-knowledge {
   position: relative;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+
   top: -10%;
   right: 15%;
-  
+}
+
+.level {
+  color: aquamarine;
+  letter-spacing: 2px;
+  background: #414242;
+  padding: 2px;
 }
 
 .frontend-knowledge{
   position: relative;
   top: 15%;
   right: 12%;
+  width: 290px;
+  padding: 33px;
 }
+
+
 
 .experience-title {
   color: rgb(6, 255, 201);
@@ -87,7 +100,7 @@
   display: flex;
   flex-direction: column;
   padding: 35px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Roboto", sans-serif;
   width:630px;
   backdrop-filter: blur( 1.5px );
   -webkit-backdrop-filter: blur( 1.5px );
@@ -126,6 +139,10 @@
   text-align: center;
   margin-top: 2px;
   margin-bottom: 12px;
+  background: #282b2b;
+  text-transform: uppercase;
+  color: aqua;
+  letter-spacing: 2px;
 }
 
 .lang, .frontend {
@@ -140,14 +157,39 @@
 }
 
 .fa-html5, .fa-css3-alt, .fa-js, .fa-react {
-  text-shadow:
-  0 0 5px rgba(255, 252, 252, 0.705),
-  0 0 5px rgba(101, 204, 170, 0.712);
-  color: #0e1111;
-  font-size: 20px;
+  color: rgb(121, 255, 210);
+  text-shadow: 0 0 2px black;
+  font-size: 22px;
   margin-right: 8px;
 }
 
+.fa-react {
+  color: aquamarine;
+  text-shadow: 0 0 2px black;
+}
 
+.level-line, .level-line-three, .level-line-two, .level-line-four {
+  position: relative;
+  margin-top: -6.2%;
+  margin-left: 47%;
+  height: 6.2px;
+  width: 63%;
+  border: black;
+  border-radius: 3px;
+  background: aqua;
 
+}
 
+.level-line-two {
+  margin-top: -5.8%;
+  width: 60%;
+  
+}
+
+.level-line-three {
+ width: 45%;
+}
+
+.level-line-four {
+  width: 20%;
+}
