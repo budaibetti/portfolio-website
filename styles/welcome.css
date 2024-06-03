@@ -22,8 +22,8 @@ padding: 20px;
 
   .resume-pic {
     display: inline-block;
-    margin-top: -3%;
-    max-width: 62%;
+    margin-top: -8%;
+    max-width: 56%;
     height: auto;
     background: #19191a9d;
     border-radius: 10px;
@@ -32,33 +32,38 @@ padding: 20px;
     padding-left: 30px;
     padding-right: 2px;
     box-shadow: 0 0 5px rgba(153, 241, 234, 0.863);
+    border-color: rgb(118, 187, 248)
   }
   
   .download-cv-btn, .message-me-btn{
-    padding: 18px;
-    font-size: 14px;
+    padding: 13px;
+    font-size: 13px;
     border-radius: 25px;
+    border-top-right-radius: 5px ;
+    border-bottom-left-radius: 5px ;
     cursor: pointer;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
-    background-color: #d4d8d7;
-    border-color: aliceblue;
+    background-color: transparent;
+    backdrop-filter: blur( 1.3px );
+  -webkit-backdrop-filter: blur( 1.3px );
+    border-color: rgb(118, 187, 248);
     box-shadow:  0 0 15px rgba(104, 186, 189, 0.781); 
-    color: rgb(30, 48, 45);
+    color: rgb(33, 252, 215);
     margin-top: 55px;
     margin-left: 30px;
-    transition: 0.1s;
+    transition: 0.2s;
     }
 
     .download-cv-btn:hover, .message-me-btn:hover {
-      background: rgb(62, 83, 75);
-      color: #edf5f3;
+      background: rgba(12, 12, 12, 0.952);
+      color: #00d9ff;
       border-color: aliceblue;
     box-shadow:
-    0 0 10px rgb(56, 114, 111),
-    0 0 25px rgb(104, 186, 189); 
+    0 0 5px rgb(56, 114, 111),
+    0 0 10px rgb(104, 186, 189); 
 
     }
 
@@ -67,7 +72,7 @@ padding: 20px;
       position: relative;
       align-items: center;
       justify-content: space-around;
-      width: 500px;
+      width: 400px;
       left: -5%;
     }
 
