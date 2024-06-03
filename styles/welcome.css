@@ -25,14 +25,16 @@ padding: 20px;
     margin-top: -8%;
     max-width: 56%;
     height: auto;
-    background: #19191a9d;
-    border-radius: 10px;
+    border-radius: 5px;
     border-top-right-radius: 90px ;
     border-bottom-left-radius: 90px ;
     padding-left: 30px;
     padding-right: 2px;
-    box-shadow: 0 0 5px rgba(153, 241, 234, 0.863);
-    border-color: rgb(118, 187, 248)
+    box-shadow: 0 0 5px rgba(60, 243, 228, 0.863);
+    border-color: rgb(118, 187, 248);
+    background-color: transparent;
+    backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
   }
   
   .download-cv-btn, .message-me-btn{

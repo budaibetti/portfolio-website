@@ -45,7 +45,7 @@
   border-radius: 10px;
   border: 1px solid rgba(25, 255, 217, 0.534);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Tektur', sans-serif;
    color: rgb(247, 244, 244);
 
@@ -91,6 +91,7 @@
   width: 290px;
   padding: 33px;
 }
+
 
 
 
@@ -173,7 +174,8 @@
   color: rgb(121, 255, 210);
   text-shadow: 0 0 2px black;
   font-size: 22px;
-  margin-right: 8px;
+  margin-right: 4px;
+  margin-left: -10px;
 }
 
 .fa-react {
@@ -184,7 +186,7 @@
 .level-line, .level-line-three, .level-line-two, .level-line-four {
   position: relative;
   margin-top: -6.2%;
-  margin-left: 47%;
+  margin-left: 46.5%;
   height: 6.2px;
   width: 63%;
   border: black;
@@ -200,7 +202,7 @@
 }
 
 .level-line-three {
- width: 45%;
+ width: 42%;
 }
 
 .level-line-four {
