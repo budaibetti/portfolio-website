@@ -131,7 +131,7 @@ function counter() {
   const totalSeconds = new Date(currentDate - startDate) / 1000;
   const days = Math.floor(totalSeconds / 3600 / 24);
   const hours = Math.floor(totalSeconds / 3600) % 24;
-  const minutes = Math.round(totalSeconds / 60) % 60;
+  const minutes = Math.floor(totalSeconds / 60) % 60;
   const seconds = Math.round(totalSeconds % 60);
 
   daysEl.innerHTML = days;

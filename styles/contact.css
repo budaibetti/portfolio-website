@@ -17,11 +17,14 @@
   letter-spacing: 5px;
   text-shadow: -2px 4px 4px rgba(12, 13, 14, 0.6);
 
-   margin-top: 4rem;
+   margin-top: 5rem;
    margin-right: 5rem;
-   margin-left: 6.2rem;
-   padding: 5px;
-   background:rgba( 255, 255, 255, 0.18 );
+   margin-left: 10rem;
+   padding: 15px;
+   background: rgb(10, 10, 10);
+   border-radius: 10%;
+   border-top-right-radius: 1% ;
+   border-bottom-left-radius: 1% ;
   
 }
 
@@ -37,11 +40,11 @@
   flex-direction: column;
   position: relative;
   top: 1%;
-  left: 5%;
+  left: -3%;
   background: transparent;
   box-shadow: 0 1px 3px 0 rgb(108, 255, 152);
-  backdrop-filter: blur( 3.5px );
-  -webkit-backdrop-filter: blur( 3.5px );
+  background: rgb(10, 10, 10);
+
   max-height: 570px;
   
   width: 750px;
@@ -125,7 +128,7 @@
   border-radius: 2px;
   border-left: 2px solid rgb(2, 255, 179);
   border-right: 2px solid rgb(2, 255, 179);
-  background: rgb(32, 31, 31);
+  background: rgb(10, 10, 10);
   letter-spacing: 3px;
   color: #02ff9e;
 }
@@ -190,9 +193,11 @@
   top: -10%;
   -webkit-text-stroke: 0.1vw #07ffff;
  margin-bottom: 40px;
- background:rgba(255, 255, 255, 0.219);
+ background: rgb(10, 10, 10);
  padding: 20px;
-  
+ border-radius: 20%;
+ border-top-right-radius: 1% ;
+ border-bottom-left-radius: 1% ;
 
 
 }
@@ -207,8 +212,11 @@
   left: 160%;
   -webkit-text-stroke: 0.1vw #02fff2;
   
- background:rgba(255, 255, 255, 0.219);
+  background: rgb(10, 10, 10);
  padding: 20px;
+ border-radius: 20%;
+  border-top-right-radius: 1% ;
+  border-bottom-left-radius: 1% ;
   
 }
 
@@ -220,8 +228,11 @@
   left: 10%;
   -webkit-text-stroke: 0.1vw #02ffff;
   
- background:rgba(255, 255, 255, 0.219);
+  background: rgb(10, 10, 10);
  padding: 20px;
+ border-radius: 20%;
+  border-top-right-radius: 1% ;
+  border-bottom-left-radius: 1% ;
   
 }
 
