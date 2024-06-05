@@ -41,9 +41,7 @@
   min-height: 450px;
   margin: 15px;
   border-radius: 20px;
-  background: #1a1a1d;
   overflow: hidden;
-  box-shadow: 0 2px 5px 0 rgb(66, 255, 195);
   
 }
 
@@ -55,8 +53,8 @@
 .work::before {
     content: '';
     position: absolute;
-    width: 780px;
-    height: 140%;
+    width: 300px;
+    height: 180%;
     border-radius: 10px;
     background: linear-gradient(#00aeff, hsl(123, 100%, 51%));
     transform: rotate(40deg);
@@ -81,13 +79,13 @@
   margin-bottom: -10%;
   margin-left: -20%;
   margin-right: 8%;
-  padding: 25px;
+  padding: 45px;
 }
 
 .portfolio2 {
-  margin-bottom: -5%;
+  margin-bottom: 10%;
   margin-left: -1%;
-  padding: 20px;
+  padding: 40px;
 }
 
 .project-pic {
@@ -177,7 +175,7 @@
 }
 
 .word-app-pic {
-  right: -39%;
+  right: -42%;
   margin-top: 7%;
   width: 42%;
 }
@@ -194,7 +192,7 @@
 }
 
 .word-btn {
-  margin-top: 35%;
+  margin-top: 98%;
 }
 
 .recipe-btn {
@@ -209,7 +207,7 @@
 }
 
 .word-demo {
-  margin-top: 55%;
+  margin-top: 75%;
 }
 
 

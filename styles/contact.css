@@ -21,10 +21,9 @@
    margin-right: 5rem;
    margin-left: 10rem;
    padding: 15px;
-   background: rgb(10, 10, 10);
-   border-radius: 10%;
-   border-top-right-radius: 1% ;
-   border-bottom-left-radius: 1% ;
+   background:rgba( 255, 255, 255, 0.18 );
+      border-radius: 2%;
+  
   
 }
 
@@ -151,19 +150,21 @@
   width: 100px;
    
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   border: solid rgb(55, 236, 55);
-  background: rgba(77, 74, 74, 0.548);
+  
   box-shadow: 0px 0px 2px 0 rgb(108, 255, 152);
-  color: rgb(33, 236, 118);
   font-size: 20px;
   font-weight: 600;
   transition: 0.5s;
+  background-color: rgba(7, 7, 7, 0.514);
+  color: rgb(7, 255, 152);
 }
 
 .submit-btn:hover {
-  background-color: rgba(7, 7, 7, 0.514);
-  color: rgb(7, 255, 152);
+  background: rgba(35, 68, 64, 0.884);
+  color: rgb(243, 238, 238);
+  border-color: aliceblue;
   
 }
 
@@ -173,12 +174,12 @@
   right: 20%;
   top: 35%;
   flex-direction: column;
-  min-width: 50px;
+  min-width: 35px;
   max-height: 200px;
   align-items: center;
   justify-content: space-around;
   margin: 0;
-  font-size: 50px;
+  font-size: 40px;
 }
 .contactIcons>i {
   cursor: pointer;
@@ -189,11 +190,11 @@
 
 .fa-linkedin  {
   position: relative;
-  left: 80%;
-  top: -10%;
+  left: -90%;
+  top: -8%;
   -webkit-text-stroke: 0.1vw #07ffff;
  margin-bottom: 40px;
- background: rgb(10, 10, 10);
+ background:rgba(255, 255, 255, 0.281);
  padding: 20px;
  border-radius: 20%;
  border-top-right-radius: 1% ;
@@ -209,7 +210,7 @@
 .fa-square-facebook {
   position: relative;
   top: -40%;
-  left: 160%;
+  left: 10%;
   -webkit-text-stroke: 0.1vw #02fff2;
   
   background: rgb(10, 10, 10);
