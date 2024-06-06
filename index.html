@@ -18,8 +18,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-  <script src="script.js" defer></script>
-    <script type="text/javascript"
+  <script type="module" src="main.js" defer></script>
+  <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -39,7 +39,7 @@
   <body>
     <nav>
       <ul class="sidebar">
-        <li class="hide-button" onclick=hideSidebar()>
+        <li class="hide-button">
           <a>
             <svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 -960 960 960" width="100" fill = "white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
           </a>
@@ -66,7 +66,7 @@
   <li>
     <div id = "expandable" class=" expandable-menu-container">
       <ul>
-        <li id="select-language" class="expandable-menu" onclick=showLangOptions()>
+        <li id="select-language" class="expandable-menu">
           <i class="fa-solid fa-language"></i>
            Select language </li> 
               </ul>
@@ -125,7 +125,7 @@
         </div>
   </li>
 
-    <li  class= "menu-button" onclick= showSideBar()>
+    <li  class= "menu-button">
     <a href="#">
       <svg xmlns="http://www.w3.org/2000/svg" height="80" viewBox="0 -960 960 960" width="80" fill = "white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
     </a>
@@ -520,7 +520,7 @@
           <span class="message-span">Your Message</span>
         </div>
         
-        <button type="submit" onclick="sendMail(event);"class="submit-btn">Submit</button>
+        <button type="submit" class="submit-btn">Submit</button>
         </form>
         
         
