@@ -1,27 +1,30 @@
 //typewriter effect
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const phrases = [
-  "translator",
-  "interpreter",
-  "aspiring frontend-developer",
-  "annotator",
-  "language-nerd",
-];
+let el = null;
+let stopLoop = false;
 
-const el = document.getElementById("typewriter");
+function setElement(element) {
+  el = element;
+}
+document.getElementById("typewriter");
 
 let sleepTime = 100;
 
-let curPhraseIndex = 0;
+const writeLoop = async (phrases) => {
+  if (!el) return;
 
-const writeLoop = async () => {
-  while (true) {
+  let curPhraseIndex = 0;
+  stopLoop = false;
+
+  while (!stopLoop) {
     let curWord = phrases[curPhraseIndex];
 
     for (let i = 0; i < curWord.length; i++) {
+      if (stopLoop) return;
       el.innerText = curWord.substring(0, i + 1);
       await sleep(sleepTime);
     }
@@ -29,6 +32,7 @@ const writeLoop = async () => {
     await sleep(sleepTime * 10);
 
     for (let i = curWord.length; i > 0; i--) {
+      if (stopLoop) return;
       el.innerText = curWord.substring(0, i - 1);
       await sleep(sleepTime);
     }
@@ -42,5 +46,8 @@ const writeLoop = async () => {
     }
   }
 };
+function stopWriteLoop() {
+  stopLoop = true;
+}
 
-export { writeLoop };
+export { writeLoop, setElement, stopWriteLoop, sleep };

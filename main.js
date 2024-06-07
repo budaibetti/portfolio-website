@@ -1,27 +1,43 @@
 import { counter } from "./scripts/counter.js";
-import { writeLoop } from "./scripts/typewriter.js";
+import { writeLoop, setElement, stopWriteLoop } from "./scripts/typewriter.js";
 import { swipeLeft, swipeRight } from "./scripts/swipe.js";
-import {
-  showSideBar,
-  hideSidebar,
-  showLangOptions,
-} from "./scripts/sideBar.js";
+import { attachEventListeners } from "./scripts/sideBar.js";
 import { sendMail } from "./scripts/email.js";
+import { selectItalian } from "./scripts/italian.js";
 
 //scroll animation library
 AOS.init();
 
+selectItalian();
+
 //typewriter effect for the welcome page
-writeLoop();
+const initTypewriter = () => {
+  stopWriteLoop();
+  const enTypeWriterEl = document.getElementById("typewriter");
+  setElement(enTypeWriterEl);
+  enTypeWriterEl.innerText = [];
+
+  const phrases = [
+    "translator",
+    "interpreter",
+    "aspiring frontend-developer",
+    "annotator",
+    "language-nerd",
+  ];
+
+  writeLoop(phrases);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  initTypewriter();
+});
 
 //Swipe effect for the travel pictures
 swipeLeft();
 swipeRight();
 
 //sidebar functions
-showSideBar();
-hideSidebar();
-showLangOptions();
+attachEventListeners();
 
 //Work experience counter
 
