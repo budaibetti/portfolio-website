@@ -1,8 +1,8 @@
-import { counter } from "./scripts/counter.js";
+import { addCounter } from "./scripts/counter.js";
 import { writeLoop, setElement, stopWriteLoop } from "./scripts/typewriter.js";
 import { swipeLeft, swipeRight } from "./scripts/swipe.js";
 import { attachEventListeners } from "./scripts/sideBar.js";
-import { sendMail } from "./scripts/email.js";
+import { emailDelivery } from "./scripts/email.js";
 import { selectItalian } from "./scripts/italian.js";
 
 //scroll animation library
@@ -41,7 +41,7 @@ attachEventListeners();
 
 //Work experience counter
 
-setInterval(counter, 1000);
+setInterval(addCounter, 1000);
 
 //Sending email
-sendMail();
+emailDelivery();

@@ -27,6 +27,11 @@
   
 }
 
+.inviaMessaggio {
+  font-size: 2rem;
+  margin-left: 6rem;
+}
+
 .in {
   margin: 0px 20px;
   
@@ -51,6 +56,10 @@
   border-top-right-radius: 1% ;
   border-bottom-left-radius: 1% ;
   margin-top: 8%;
+}
+
+.it-contact-container {
+  left:-6%;
 }
 
 .contact-form {
