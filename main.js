@@ -4,11 +4,14 @@ import { swipeLeft, swipeRight } from "./scripts/swipe.js";
 import { attachEventListeners } from "./scripts/sideBar.js";
 import { emailDelivery } from "./scripts/email.js";
 import { selectItalian } from "./scripts/italian.js";
+import { selectHungarian } from "./scripts/hungarian.js";
+// Default values shown
 
 //scroll animation library
 AOS.init();
 
 selectItalian();
+selectHungarian();
 
 //typewriter effect for the welcome page
 const initTypewriter = () => {

@@ -114,78 +114,6 @@ function selectItalian() {
     `;
     attachEventListeners();
 
-    welcomePage.innerHTML = `
-    <div class="welcome-div">
-    <div class="welcome-text"> 
-      <div class="benvenuti">
-        Benvenuti
-      </div> 
-     </div>
-
-    <div class="introduction-container">
-      <div class="to-my">
-        <p class="to-my-typewrite">...nel mio sito</p>
-      </div>
-
-      <div class="introduction">
-        <p class="my-name-p"> <span class="my-name"> Mi chiamo</span>
-          <div class="name-box">
-          <div class="lightbar"></div>
-          
-          <span class="bettina-budai">Bettina Budai</span></p>
-
-        
-          </div>
-           
-      </div>
-
-      <div class="I-am">
-         <p >Sono </p><span class="innerIam" id="itTypewriter"></span><span  class= "cursor"id="cursor">|</span>
-      </div>
-    
-    </div>
-    
-  </div>
-   
-
-    <div  class="resume-pic-container">
-      <img data-aos="flip-left"
-      data-aos-duration="1000"
-       class="resume-pic" src="./resume/ResumePicBB.png">
-      <div class="button-container">
-        <a href="./resume/Bettina Budai- CV.pdf" download="Bettina Budai-CV">
-          <button class="download-cv-btn">
-            Scarica il CV
-            <i class="fa-solid fa-arrow-down"></i>
-          </button>
-        </a>
-     
-      <a href="#contact">
-        <button class="message-me-btn">
-          Scrivimi
-          <i class="fa-regular fa-comment-dots"></i>
-        </button>
-      </a>
-      
-      </div>
-      
-    </div>`;
-    AOS.init();
-    stopWriteLoop();
-    await sleep(1200);
-    const typewriterElement = document.getElementById("itTypewriter");
-    setElement(typewriterElement);
-
-    // Clear the typewriter element's text
-
-    typewriterElement.innerText = [];
-    const itPhrases = [
-      " una traduttrice",
-      "un'interprete",
-      "un'aspirante sviluppatrice di front-end",
-      "una fanatica delle lingue",
-    ];
-    writeLoop(itPhrases);
     aboutPage.innerHTML = `     
      <h1 class="section-title">Informazioni </h1>
 
@@ -312,7 +240,7 @@ function selectItalian() {
       data-aos-duration="1000" class="work portfolio1 it-portfolio1">
         <img class="project-pic recipe-pic it-recipe-pic" src="./images/Recipe-app.png">
         <h3 class="app-title recipe-app-title it-title">App per ricette</h3>
-        <p class="app-description recipe-descr it-descr">Realizzata con <span class="prog-lang">React.js</span>, questa applicazione fornisce un ampio database culinario per gli appassionati di cucina che cercano varietà e convenienza. Gli utenti possono  <span class="slogan">cercare</span> in modo efficiente ricette personalizzate in base ai loro gusti e alle loro esigenze dietetiche, salvando le loro preferite in <span class="slogan">in una raccolta personalizzata </span> con un solo "like".  L'applicazione offre un'interfaccia fluida e facile da usare per scoprire nuovi piatti e tornare alle ricette preferite. <span class="slogan">"Metti Like, Mangia, Ama, Ripeti"</span> – trasformando ogni pasto in una piacevole esperienza.</p>
+        <p class="app-description recipe-descr it-descr">Realizzata con <span class="prog-lang">React.js</span>, questa applicazione fornisce un ampio database culinario per gli appassionati di cucina che cercano varietà e convenienza. Gli utenti possono  <span class="slogan">cercare</span> in modo efficiente ricette personalizzate in base ai loro gusti e alle loro esigenze dietetiche, salvando le loro preferite in <span class="slogan"> una raccolta personalizzata </span> con un solo "like".  L'applicazione offre un'interfaccia fluida e facile da usare per scoprire nuovi piatti e tornare alle ricette preferite. <span class="slogan">"Metti Like, Mangia, Ama, Ripeti"</span> – trasformando ogni pasto in una piacevole esperienza.</p>
 
         <a class="repo-link">
           <button class="project-demo-btn recipe-btn demo it-recipe-demo">Demo</button>
@@ -397,7 +325,88 @@ function selectItalian() {
         
       </div>
     `;
+    welcomePage.innerHTML = `
+    <div class="welcome-div">
+    <div class="welcome-text"> 
+      <div class="benvenuti">
+        Benvenuti
+      </div> 
+     </div>
+
+    <div class="introduction-container">
+      <div class="to-my">
+        <p class="to-my-typewrite">...nel mio sito</p>
+      </div>
+
+      <div class="introduction">
+        <p class="my-name-p"> <span class="my-name"> Mi chiamo</span>
+          <div class="name-box">
+          <div class="lightbar"></div>
+          
+          <span class="bettina-budai">Bettina Budai</span></p>
+
+        
+          </div>
+           
+      </div>
+
+      <div class="I-am">
+         <p >Sono </p><span class="innerIam" id="itTypewriter"></span><span  class= "cursor"id="cursor">|</span>
+      </div>
+    
+    </div>
+    
+  </div>
+   
+
+    <div  class="resume-pic-container">
+      <img data-aos="flip-left"
+      data-aos-duration="1000"
+       class="resume-pic" src="./resume/ResumePicBB.png">
+      <div class="button-container">
+        <a href="./resume/Bettina Budai- CV.pdf" download="Bettina Budai-CV">
+          <button class="download-cv-btn">
+            Scarica il CV
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </a>
+     
+      <a href="#contact">
+        <button class="message-me-btn">
+          Scrivimi
+          <i class="fa-regular fa-comment-dots"></i>
+        </button>
+      </a>
+      
+      </div>
+      
+    </div>`;
+    AOS.init();
+    stopWriteLoop();
+    await sleep(1300);
+    const typewriterElement = document.getElementById("itTypewriter");
+    setElement(typewriterElement);
+
+    // Clear the typewriter element's text
+
+    typewriterElement.innerText = [];
+    const itPhrases = [
+      " una traduttrice",
+      "un'interprete",
+      "un'aspirante sviluppatrice di front-end",
+      "una fanatica delle lingue",
+    ];
+    writeLoop(itPhrases);
     emailDelivery();
   });
 }
-export { selectItalian };
+export {
+  selectItalian,
+  navBar,
+  aboutPage,
+  welcomePage,
+  workExperience,
+  hobby,
+  portfolioPage,
+  contactPage,
+};
