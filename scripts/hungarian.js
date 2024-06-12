@@ -8,14 +8,16 @@ import {
   workExperience,
   hobby,
   portfolioPage,
+  contactPage,
+  welcomePage,
 } from "./italian.js";
 
-//TODO: add welcom and contact page, pass down selectItalian function
+//TODO: pass down selectItalian function, fix css
 
 const selectHu = document.getElementById("language-three");
 
 function selectHungarian() {
-  selectHu.addEventListener("click", () => {
+  selectHu.addEventListener("click", async () => {
     navBar.innerHTML = `
     <ul class="sidebar">
         <li class="hide-button">
@@ -277,7 +279,132 @@ function selectHungarian() {
       
     </div>
     `;
+    contactPage.innerHTML = `
+      <h3 class="getInTouch inviaMessaggio">Elérhetőség</h3>
+
+      <div class="contactIcons it-contactIcons">
+        <a href="https://www.facebook.com/budaibett/" target="_blank"><i data-aos="fade-right"
+          data-aos-duration="1500"
+          class="fa-brands fa-square-facebook">
+        </i>
+        </a>
+        <a href="https://www.linkedin.com/in/bettina-budai-16765a2b9/" target="_blank">
+          <i data-aos="fade-left"
+          data-aos-duration="1500"class="fa-brands fa-linkedin">
+
+          </i>
+        </a>
+        <a href="https://github.com/budaibetti" target="_blank">
+          <i data-aos="fade-right"
+          data-aos-duration="1500" class="fa-brands fa-github"></i>
+        </a>
+       
+      </div>
+
+      <div   class="contact-container">
+        
+        <form  class="contact-form">
+        
+          <div class="inputBox">
+            <input type="text" id="contactName"  class="contact-inputs name-input" required>
+          <span> Név</span>
+          </div>
+          
+          <div class="inputBox">
+            <input type="email"  id="email"  class="contact-inputs email-input" required>
+        <span>E-mail cím</span>
+          </div>
+
+        <div class="inputBox">
+          <textarea id="message"  class="contact-inputs message-area" required></textarea>
+          <span class="message-span">Üzenet</span>
+        </div>
+        
+        <button type="submit" class="submit-btn">Invia</button>
+        </form>
+        
+        
+      </div>
+    `;
+
+    welcomePage.innerHTML = `
+    <div class="welcome-div">
+    <div class="welcome-text"> 
+      <div class="üdvözlöm">
+        Üdvözlöm
+      </div> 
+     </div>
+
+    <div class="introduction-container">
+      <div class="to-my">
+        <p class="to-my-typewrite">...a weboldalamon</p>
+      </div>
+
+      <div class="introduction">
+        <p class="my-name-p"> 
+          <div class="name-box">
+          <div class="lightbar"></div>
+          
+          <span class="bettina-budai huName">Budai Bettinának</span>
+          <span class="my-name"> hívnak</span>
+          </p>
+
+        
+          </div>
+           
+      </div>
+
+      <div class="I-am">
+         <span class="innerIam" id="huTypewriter"></span>  <span  class= "cursor"id="cursor">|</span>
+         <p >vagyok </p>
+      </div>
+    
+    </div>
+    
+  </div>
+   
+
+    <div  class="resume-pic-container">
+      <img data-aos="flip-left"
+      data-aos-duration="1000"
+       class="resume-pic" src="./resume/ResumePicBB.png">
+      <div class="button-container">
+        <a href="./resume/Bettina Budai- CV.pdf" download="Bettina Budai-CV">
+          <button class="download-cv-btn">
+            CV letöltése
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </a>
+     
+      <a href="#contact">
+        <button class="message-me-btn">
+          Kapcsolatfelvétel
+          <i class="fa-regular fa-comment-dots"></i>
+        </button>
+      </a>
+      
+      </div>
+      
+    </div>`;
     AOS.init();
+    stopWriteLoop();
+    await sleep(1300);
+
+    const hutypewriterElement = document.getElementById("huTypewriter");
+    setElement(hutypewriterElement);
+
+    // Clear the typewriter element's text
+
+    hutypewriterElement.innerText = [];
+    const huPhrases = [
+      "Fordító",
+      "Tolmács",
+      "Kezdő frontend fejlesztő",
+      "Nyelvfanatikus",
+    ];
+    writeLoop(huPhrases);
+    emailDelivery();
   });
 }
+
 export { selectHungarian };

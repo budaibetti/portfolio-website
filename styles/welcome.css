@@ -107,7 +107,7 @@ padding: 20px;
       width: 500px;
     }
 
-    .welcome, .benvenuti {
+    .welcome, .benvenuti, .üdvözlöm {
       position: absolute;
       display: flex;
       font-size: 100px;
@@ -157,7 +157,14 @@ padding: 20px;
   left: 0;
 }
 
-.welcome::before, .benvenuti::before{
+.üdvözlöm::before, .üdvözlöm::after {
+  content: 'Üdvözlöm';
+  position: absolute;
+  left: 0;
+}
+
+
+.welcome::before, .benvenuti::before, .üdvözlöm::before{
   animation: glitchTop 1.5s linear infinite;
   clip-path: polygon(0 0, 100% 0, 100% 47%, 0 47%, 0 47%, 0 47%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 47%, 0 47%);
@@ -175,7 +182,7 @@ padding: 20px;
   }
 }
 
-.welcome::after, .benvenuti::after{
+.welcome::after, .benvenuti::after, .üdvözlöm::after{
   animation: glitchBotom 3s linear infinite;
   clip-path: polygon(0 57%, 100% 57%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 57%, 100% 57%, 100% 100%, 0 100%);
@@ -269,6 +276,10 @@ padding: 20px;
       0 0 5px #00b3ff;
       color: #f8fcf9;
   
+}
+
+.huName {
+  min-width: 550px;
 }
 
 
