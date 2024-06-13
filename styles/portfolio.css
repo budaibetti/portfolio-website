@@ -23,6 +23,11 @@
   text-transform: uppercase;
   font-family: "Tektur", sans-serif;
 }
+
+.hu-prj-title{
+  top:-38%;
+  right: -8%;
+}
 .portfolio-container {
   display: flex;
   align-items: center;
@@ -111,6 +116,19 @@
   margin-bottom: 7%;
 }
 
+.hu-portfolio-container {
+  max-width: 1000px;
+}
+
+.hu-portfolio1{
+  left: 10%;
+  padding: 30px;
+}
+
+.hu-portfolio2 {
+  left: 10%;
+  padding: 40px;
+}
 
 .project-demo-btn, .project-github-btn, .repo-link {
   z-index: 20;
@@ -185,6 +203,10 @@
 .it-descr {
   left: 8%;
 }
+.hu-descr {
+  left: 10%;
+  min-width: 240px;
+}
 .prog-lang, .slogan {
   color: rgb(6, 255, 255);
   text-shadow: -2px 4px 4px rgba(12, 13, 14, 0.6);
@@ -212,6 +234,9 @@
   min-width: 160px;
   right: -8%;
 }
+.hu-app-title {
+  min-width: 85px;
+}
 .word-app-descr{
   min-width: 330px;
   margin-top: 0%;
@@ -223,6 +248,10 @@
   margin-top: -10%;
   min-width: 280px;
   margin-left: 10%;
+}
+
+.hu-word-descr {
+  margin-left: 25%;
 }
 
 .word-btn {
@@ -252,9 +281,15 @@
   margin-top: 130%;
 }
 
+
+
 .it-word-demo {
   margin-top: 110%;
 }
+.hu-word-demo, .hu-word-git {
+  margin-left: -40%;
+}
+
 
 .it-recipe-pic {
   right: -38%;

@@ -118,29 +118,29 @@ function selectHungarian() {
     `;
     attachEventListeners();
     aboutPage.innerHTML = `     
-    <h1 class="section-title">Rólam </h1>
+    <h1 class="section-title hu-section-title">Rólam </h1>
 
  <div data-aos="fade-right" 
      data-aos-duration="1000"
-     class="language-knowledge">
+     class="language-knowledge hu-lang-knowledge">
        <p class="skills-title">Nyelvi ismeretek</p>
        <p class="lang">
          Magyar <span class="level it-level">Anyanyelv</span>
        </p>
       <p class="lang">
-       Angol <span class="level advanced advanced-it">C1</span>
+       Angol <span class="level advanced ">C1</span>
      </p> 
        <p class="lang">
-         Olasz <span class="level advanced1 advanced-it1">C1</span>
+         Olasz <span class="level advanced1 ">C1</span>
        </p>
        <p class="lang">
-         Spanyol <span class="level beginner beginner-it">A1</span>
+         Spanyol <span class="level beginner hu-beginner">A1</span>
        </p>
      </div>
 
      <div data-aos="fade-left"
      data-aos-duration="1000"
-     class="frontend-knowledge">
+     class="frontend-knowledge hu-frontend">
        <p class="skills-title"> Front-end fejlesztői készségek</p>
        <p class="frontend">
          <i class="fa-brands fa-html5"></i>
@@ -164,14 +164,14 @@ function selectHungarian() {
 
      <div data-aos="zoom-in-up"
      data-aos-duration="2000"
-      class="translation-experience">
+      class="translation-experience hu-experience">
        
          <h3 class="experience-title">Fordítói tapasztalatok</h3>
 
        
 
        <p>Széleskörű fordítási tapasztalattal rendelkezem, számos területen dolgoztam már különböző típusú szövegeken. A munkáim között szerepelnek többek között a következők:
-         <ul class="text-type-list it-list">
+         <ul class="text-type-list hu-list ">
            <li>
              <span class="text-type">Színházi darab feliratozása</span><br> Nevezetesen Pass Andrea Finálé c. darabja, ahol a precizítás és az időzítés központi szerepet játszott. 
              
@@ -236,15 +236,15 @@ function selectHungarian() {
         </ul>
     `;
     portfolioPage.innerHTML = `
-     <h2 class="projects-title">Munkáim </h2>
+     <h2 class="projects-title hu-prj-title">Munkáim </h2>
 
-      <div class="portfolio-container it-portfolio-container">
+      <div class="portfolio-container it-portfolio-container hu-portf-container">
 
       <div data-aos="flip-right" 
-      data-aos-duration="1000" class="work portfolio1 it-portfolio1">
-        <img class="project-pic recipe-pic it-recipe-pic" src="./images/Recipe-app.png">
+      data-aos-duration="1000" class="work portfolio1 it-portfolio1 hu-portfolio1">
+        <img class="project-pic recipe-pic " src="./images/Recipe-app.png">
         <h3 class="app-title recipe-app-title it-title">Receptkereső alkalmazás</h3>
-        <p class="app-description recipe-descr it-descr">A <span class="prog-lang">React.js</span> alapú alkalmazás széles körű kulináris adatbázist kínál a főzés szerelmesei számára, akik változatosságot és kényelmet keresnek. A felhasználók könnyedén <span class="slogan">rákereshetnek</span> a saját ízlésüknek és étkezési szükségleteikhez igazított receptekre, és egyetlen lájkkal elmenthetik kedvenceiket egy <span class="slogan">személyre szabott gyűjteménybe.</span> Az alkalmazás gördülékeny és könnyen kezelhető felületet kínál az új ételek felfedezéséhez és a kedvenc receptek eléréséhez. <span class="slogan">"Lájkold, edd, szeresd, kezdd elölről"</span> – így minden étkezés örömtelivé válik.</p>
+        <p class="app-description recipe-descr hu-descr">A <span class="prog-lang">React.js</span> alapú alkalmazás széles körű kulináris adatbázist kínál a főzés szerelmesei számára, akik változatosságot és kényelmet keresnek. A felhasználók könnyedén <span class="slogan">rákereshetnek</span> a saját ízlésüknek és étkezési szükségleteikhez igazított receptekre, és egyetlen lájkkal elmenthetik kedvenceiket egy <span class="slogan">személyre szabott gyűjteménybe.</span> Az alkalmazás gördülékeny és könnyen kezelhető felületet kínál az új ételek felfedezéséhez és a kedvenc receptek eléréséhez. <span class="slogan">"Lájkold, edd, szeresd, kezdd elölről"</span> – így minden étkezés örömtelivé válik.</p>
 
         <a class="repo-link">
           <button class="project-demo-btn recipe-btn demo it-recipe-demo">Demo</button>
@@ -261,18 +261,18 @@ function selectHungarian() {
 
       <div data-aos="flip-left" 
       data-aos-duration="1500"
-      class="work portfolio2 it-portfolio2"> 
+      class="work portfolio2 it-portfolio2 hu-portfolio2"> 
         <img class="project-pic word-app-pic it-word-pic " src="./images/Daily-word-app.png">
-        <h3 class="app-title word-app-title it-word-title">Napi szó</h3>
-        <p class="app-description word-app-descr it-word-descr">A <span class="prog-lang">Vanilla JavaScript</span> segítségével készült "Napi szó" elnevezésű alkalmazás minden nap új szavakat mutat be <span class="slogan">angol, olasz és magyar nyelven</span>, így ideális a nyelvek szerelmeseinek, akik szeretnék bővíteni a tudásukat.  Merüljön el a szavak rejtelmeiben a részletes definíciók és a példamondatok segítségével. Saját <span class="slogan">gyűjteményt</span> hozhat létre kedvenc szavaiból, elősegítve ezzel a folyamatos tanulást. Az intuitív felhasználói felületnek köszönhetően e nyelvek felfedezése és szókincsének bővítése a mindennapi rutin szerves részévé válik.</p>
+        <h3 class="app-title word-app-title it-word-title hu-app-title">Napi szó</h3>
+        <p class="app-description word-app-descr it-word-descr hu-word-descr">A <span class="prog-lang">Vanilla JavaScript</span> segítségével készült "Napi szó" elnevezésű alkalmazás minden nap új szavakat mutat be <span class="slogan">angol, olasz és magyar nyelven</span>, így ideális a nyelvek szerelmeseinek, akik szeretnék bővíteni a tudásukat.  Merüljön el a szavak rejtelmeiben a részletes definíciók és a példamondatok segítségével. Saját <span class="slogan">gyűjteményt</span> hozhat létre kedvenc szavaiból, elősegítve ezzel a folyamatos tanulást. Az intuitív felhasználói felületnek köszönhetően e nyelvek felfedezése és szókincsének bővítése a mindennapi rutin szerves részévé válik.</p>
 
         <a  class=" repo-link">
-          <button class="project-demo-btn word-btn demo word-demo it-word-demo">Demo</button>
+          <button class="project-demo-btn word-btn demo word-demo it-word-demo hu-word-demo">Demo</button>
 
         </a>
 
         <a class="repo-link" href="https://github.com/budaibetti/daily-word-generator" target="_blank">
-          <button class="project-github-btn word-btn it-word-git">Github</button>
+          <button class="project-github-btn word-btn it-word-git hu-word-git">Github</button>
 
         </a>
       </div>
@@ -280,9 +280,9 @@ function selectHungarian() {
     </div>
     `;
     contactPage.innerHTML = `
-      <h3 class="getInTouch inviaMessaggio">Elérhetőség</h3>
+      <h3 class="getInTouch ">Elérhetőség</h3>
 
-      <div class="contactIcons it-contactIcons">
+      <div class="contactIcons hu-contactIcons">
         <a href="https://www.facebook.com/budaibett/" target="_blank"><i data-aos="fade-right"
           data-aos-duration="1500"
           class="fa-brands fa-square-facebook">
@@ -301,7 +301,7 @@ function selectHungarian() {
        
       </div>
 
-      <div   class="contact-container">
+      <div   class="contact-container hu-contact-container">
         
         <form  class="contact-form">
         
@@ -320,7 +320,7 @@ function selectHungarian() {
           <span class="message-span">Üzenet</span>
         </div>
         
-        <button type="submit" class="submit-btn">Invia</button>
+        <button type="submit" class="submit-btn">Küldés</button>
         </form>
         
         
@@ -378,7 +378,7 @@ function selectHungarian() {
      
       <a href="#contact">
         <button class="message-me-btn">
-          Kapcsolatfelvétel
+          Írj nekem
           <i class="fa-regular fa-comment-dots"></i>
         </button>
       </a>

@@ -61,7 +61,9 @@
 .it-contact-container {
   left:-6%;
 }
-
+.hu-contact-container {
+  left: -3%;
+}
 .contact-form {
   display: flex;
   position: relative;
