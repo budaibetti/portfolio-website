@@ -2,8 +2,8 @@ import { attachEventListeners } from "./sideBar.js";
 import { writeLoop, setElement, stopWriteLoop, sleep } from "./typewriter.js";
 import { addCounter } from "./counter.js";
 import { emailDelivery } from "./email.js";
+import { selectHungarian } from "./hungarian.js";
 
-const selectIt = document.getElementById("language-two");
 const navBar = document.getElementById("navigation");
 const welcomePage = document.querySelector(".welcome-page");
 const aboutPage = document.getElementById("about");
@@ -13,8 +13,10 @@ const portfolioPage = document.getElementById("portfolio");
 const contactPage = document.getElementById("contact");
 
 function selectItalian() {
-  selectIt.addEventListener("click", async () => {
-    navBar.innerHTML = `
+  const selectIt = document.querySelectorAll(".itSelected");
+  selectIt.forEach((itelement) =>
+    itelement.addEventListener("click", async () => {
+      navBar.innerHTML = `
     <ul class="sidebar">
         <li class="hide-button">
           <a>
@@ -53,7 +55,7 @@ function selectItalian() {
     <div class="expandable-elements">
         <ul class="expandable-language-list">
               <li id="expandable-language-two" class="expandable-element">Inglese</li>
-              <li id="expandable-language-three" class="expandable-language-element">Ungherese</li>
+              <li id="expandable-language-three" class="expandable-language-element huSelected">Ungherese</li>
            </ul>
         </div>
             
@@ -97,7 +99,7 @@ function selectItalian() {
       <div class="dropdown-elements">
             <ul class="language-list">
               <li id="language-one" class="language-element">EN</li>
-              <li id="language-three" class="language-element">HU</li>
+              <li id="language-three" class="language-element huSelected">HU</li>
             </ul>
         </div>
   </li>
@@ -112,9 +114,9 @@ function selectItalian() {
         
  </ul>
     `;
-    attachEventListeners();
+      attachEventListeners();
 
-    aboutPage.innerHTML = `     
+      aboutPage.innerHTML = `     
      <h1 class="section-title">Informazioni </h1>
 
   <div data-aos="fade-right" 
@@ -190,7 +192,7 @@ function selectItalian() {
           Questa esperienza diversificata mi ha dotato di un ampio repertorio di competenze e di un approccio adattabile alla traduzione.</p>
 
       </div>`;
-    workExperience.innerHTML = `
+      workExperience.innerHTML = `
          <div class="work-experience-title">
         <h2> <span class="current-workplace">Attuale posto di lavoro</span> <br> Tech Mahindra - Team <span class="team-name">Italiano</span> </h2><br>
         <h3>Lavoro qui da</h3>
@@ -222,8 +224,8 @@ function selectItalian() {
            </div>
           
       `;
-    addCounter();
-    hobby.innerHTML = `
+      addCounter();
+      hobby.innerHTML = `
     <h3>Interessi</h3>
         <ul class="hobbies-list">
           <li class="hobby-list"> Fare coding</li>
@@ -231,7 +233,7 @@ function selectItalian() {
           <li class="hobby-list">Viaggiare</li>
         </ul>
     `;
-    portfolioPage.innerHTML = `
+      portfolioPage.innerHTML = `
      <h2 class="projects-title">I miei progetti </h2>
 
       <div class="portfolio-container it-portfolio-container">
@@ -276,7 +278,7 @@ function selectItalian() {
     </div>
     `;
 
-    contactPage.innerHTML = `
+      contactPage.innerHTML = `
       <h3 class="getInTouch inviaMessaggio">Invia 
         <span class="in"> un </span> 
         messaggio</h3>
@@ -325,7 +327,7 @@ function selectItalian() {
         
       </div>
     `;
-    welcomePage.innerHTML = `
+      welcomePage.innerHTML = `
     <div class="welcome-div">
     <div class="welcome-text"> 
       <div class="benvenuti">
@@ -381,24 +383,26 @@ function selectItalian() {
       </div>
       
     </div>`;
-    AOS.init();
-    stopWriteLoop();
-    await sleep(1300);
-    const typewriterElement = document.getElementById("itTypewriter");
-    setElement(typewriterElement);
+      AOS.init();
+      stopWriteLoop();
+      await sleep(1300);
+      const typewriterElement = document.getElementById("itTypewriter");
+      setElement(typewriterElement);
 
-    // Clear the typewriter element's text
+      // Clear the typewriter element's text
 
-    typewriterElement.innerText = [];
-    const itPhrases = [
-      " una traduttrice",
-      "un'interprete",
-      "un'aspirante sviluppatrice di front-end",
-      "una fanatica delle lingue",
-    ];
-    writeLoop(itPhrases);
-    emailDelivery();
-  });
+      typewriterElement.innerText = [];
+      const itPhrases = [
+        " una traduttrice",
+        "un'interprete",
+        "un'aspirante sviluppatrice di front-end",
+        "una fanatica delle lingue",
+      ];
+      writeLoop(itPhrases);
+      emailDelivery();
+      selectHungarian();
+    })
+  );
 }
 export {
   selectItalian,

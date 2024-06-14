@@ -10,15 +10,17 @@ import {
   portfolioPage,
   contactPage,
   welcomePage,
+  selectItalian,
 } from "./italian.js";
 
 //TODO: pass down selectItalian function, fix css
 
-const selectHu = document.getElementById("language-three");
-
 function selectHungarian() {
-  selectHu.addEventListener("click", async () => {
-    navBar.innerHTML = `
+  const selectHu = document.querySelectorAll(".huSelected");
+
+  selectHu.forEach((huElement) =>
+    huElement.addEventListener("click", async () => {
+      navBar.innerHTML = `
     <ul class="sidebar">
         <li class="hide-button">
           <a>
@@ -57,7 +59,7 @@ function selectHungarian() {
     <div class="expandable-elements">
         <ul class="expandable-language-list">
               <li id="expandable-language-two" class="expandable-element">Angol</li>
-              <li id="expandable-language-three" class="expandable-language-element">Olasz</li>
+              <li id="expandable-language-three" class="expandable-language-element itSelected">Olasz</li>
            </ul>
         </div>
             
@@ -101,7 +103,7 @@ function selectHungarian() {
       <div class="dropdown-elements">
             <ul class="language-list">
               <li id="language-one" class="language-element">EN</li>
-              <li id="language-two" class="language-element">IT</li>
+              <li id="language-two" class="language-element itSelected">IT</li>
             </ul>
         </div>
   </li>
@@ -116,8 +118,8 @@ function selectHungarian() {
         
  </ul>
     `;
-    attachEventListeners();
-    aboutPage.innerHTML = `     
+      attachEventListeners();
+      aboutPage.innerHTML = `     
     <h1 class="section-title hu-section-title">Rólam </h1>
 
  <div data-aos="fade-right" 
@@ -194,7 +196,7 @@ function selectHungarian() {
          </p>
 
      </div>`;
-    workExperience.innerHTML = `
+      workExperience.innerHTML = `
      <div class="work-experience-title">
     <h2> <span class="current-workplace">Jelenlegi munkahely</span> <br> Tech Mahindra - <span class="team-name">Olasz</span>Team </h2><br>
     <h3>Ennyi ideje dolgozom itt:</h3>
@@ -226,8 +228,8 @@ function selectHungarian() {
        </div>
       
   `;
-    addCounter();
-    hobby.innerHTML = `
+      addCounter();
+      hobby.innerHTML = `
     <h3>Hobbijaim</h3>
         <ul class="hobbies-list">
           <li class="hobby-list"> Programozás</li>
@@ -235,7 +237,7 @@ function selectHungarian() {
           <li class="hobby-list">Utazás</li>
         </ul>
     `;
-    portfolioPage.innerHTML = `
+      portfolioPage.innerHTML = `
      <h2 class="projects-title hu-prj-title">Munkáim </h2>
 
       <div class="portfolio-container it-portfolio-container hu-portf-container">
@@ -279,7 +281,7 @@ function selectHungarian() {
       
     </div>
     `;
-    contactPage.innerHTML = `
+      contactPage.innerHTML = `
       <h3 class="getInTouch ">Elérhetőség</h3>
 
       <div class="contactIcons hu-contactIcons">
@@ -327,7 +329,7 @@ function selectHungarian() {
       </div>
     `;
 
-    welcomePage.innerHTML = `
+      welcomePage.innerHTML = `
     <div class="welcome-div">
     <div class="welcome-text"> 
       <div class="üdvözlöm">
@@ -386,25 +388,28 @@ function selectHungarian() {
       </div>
       
     </div>`;
-    AOS.init();
-    stopWriteLoop();
-    await sleep(1300);
 
-    const hutypewriterElement = document.getElementById("huTypewriter");
-    setElement(hutypewriterElement);
+      AOS.init();
+      stopWriteLoop();
+      await sleep(1300);
 
-    // Clear the typewriter element's text
+      const hutypewriterElement = document.getElementById("huTypewriter");
+      setElement(hutypewriterElement);
 
-    hutypewriterElement.innerText = [];
-    const huPhrases = [
-      "Fordító",
-      "Tolmács",
-      "Kezdő frontend fejlesztő",
-      "Nyelvfanatikus",
-    ];
-    writeLoop(huPhrases);
-    emailDelivery();
-  });
+      // Clear the typewriter element's text
+
+      hutypewriterElement.innerText = [];
+      const huPhrases = [
+        "Fordító",
+        "Tolmács",
+        "Kezdő frontend fejlesztő",
+        "Nyelvfanatikus",
+      ];
+      writeLoop(huPhrases);
+      emailDelivery();
+      selectItalian();
+    })
+  );
 }
 
 export { selectHungarian };
