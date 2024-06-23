@@ -2,6 +2,7 @@ import { attachEventListeners } from "./sideBar.js";
 import { writeLoop, setElement, stopWriteLoop, sleep } from "./typewriter.js";
 import { addCounter } from "./counter.js";
 import { emailDelivery } from "./email.js";
+import { selectEnglish } from "./english.js";
 import {
   navBar,
   aboutPage,
@@ -21,6 +22,8 @@ function selectHungarian() {
   selectHu.forEach((huElement) =>
     huElement.addEventListener("click", async () => {
       navBar.innerHTML = `
+  <nav id="navigation">
+
     <ul class="sidebar">
         <li class="hide-button">
           <a>
@@ -58,7 +61,7 @@ function selectHungarian() {
   
     <div class="expandable-elements">
         <ul class="expandable-language-list">
-              <li id="expandable-language-two" class="expandable-element">Angol</li>
+              <li id="expandable-language-two" class="expandable-element enSelected">Angol</li>
               <li id="expandable-language-three" class="expandable-language-element itSelected">Olasz</li>
            </ul>
         </div>
@@ -102,7 +105,7 @@ function selectHungarian() {
   
       <div class="dropdown-elements">
             <ul class="language-list">
-              <li id="language-one" class="language-element">EN</li>
+              <li id="language-one" class="language-element enSelected">EN</li>
               <li id="language-two" class="language-element itSelected">IT</li>
             </ul>
         </div>
@@ -117,6 +120,8 @@ function selectHungarian() {
  
         
  </ul>
+  </nav>
+
     `;
       attachEventListeners();
       aboutPage.innerHTML = `     
@@ -391,7 +396,7 @@ function selectHungarian() {
 
       AOS.init();
       stopWriteLoop();
-      await sleep(1300);
+      await sleep(1500);
 
       const hutypewriterElement = document.getElementById("huTypewriter");
       setElement(hutypewriterElement);
@@ -408,6 +413,7 @@ function selectHungarian() {
       writeLoop(huPhrases);
       emailDelivery();
       selectItalian();
+      selectEnglish();
     })
   );
 }

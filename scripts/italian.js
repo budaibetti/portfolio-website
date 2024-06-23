@@ -3,8 +3,9 @@ import { writeLoop, setElement, stopWriteLoop, sleep } from "./typewriter.js";
 import { addCounter } from "./counter.js";
 import { emailDelivery } from "./email.js";
 import { selectHungarian } from "./hungarian.js";
+import { selectEnglish } from "./english.js";
 
-const navBar = document.getElementById("navigation");
+const navBar = document.getElementById("section1");
 const welcomePage = document.querySelector(".welcome-page");
 const aboutPage = document.getElementById("about");
 const workExperience = document.querySelector(".work-experience-counter");
@@ -12,13 +13,13 @@ const hobby = document.querySelector(".hobby");
 const portfolioPage = document.getElementById("portfolio");
 const contactPage = document.getElementById("contact");
 
-let selectedEn = false;
-
 function selectItalian() {
   const selectIt = document.querySelectorAll(".itSelected");
+
   selectIt.forEach((itelement) =>
     itelement.addEventListener("click", async () => {
       navBar.innerHTML = `
+      <nav id="navigation">
     <ul class="sidebar">
         <li class="hide-button">
           <a>
@@ -56,7 +57,7 @@ function selectItalian() {
   
     <div class="expandable-elements">
         <ul class="expandable-language-list">
-              <li id="expandable-language-two" class="expandable-element">Inglese</li>
+              <li id="expandable-language-two" class="expandable-element enSelected">Inglese</li>
               <li id="expandable-language-three" class="expandable-language-element huSelected">Ungherese</li>
            </ul>
         </div>
@@ -100,7 +101,7 @@ function selectItalian() {
   
       <div class="dropdown-elements">
             <ul class="language-list">
-              <li id="language-one" class="language-element">EN</li>
+              <li id="language-one" class="language-element enSelected">EN</li>
               <li id="language-three" class="language-element huSelected">HU</li>
             </ul>
         </div>
@@ -115,6 +116,8 @@ function selectItalian() {
  
         
  </ul>
+ </nav>
+
     `;
       attachEventListeners();
 
@@ -387,7 +390,7 @@ function selectItalian() {
     </div>`;
       AOS.init();
       stopWriteLoop();
-      await sleep(1300);
+      await sleep(1500);
       const typewriterElement = document.getElementById("itTypewriter");
       setElement(typewriterElement);
 
@@ -403,9 +406,11 @@ function selectItalian() {
       writeLoop(itPhrases);
       emailDelivery();
       selectHungarian();
+      selectEnglish();
     })
   );
 }
+
 export {
   selectItalian,
   navBar,

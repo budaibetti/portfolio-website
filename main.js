@@ -5,6 +5,7 @@ import { attachEventListeners } from "./scripts/sideBar.js";
 import { emailDelivery } from "./scripts/email.js";
 import { selectItalian } from "./scripts/italian.js";
 import { selectHungarian } from "./scripts/hungarian.js";
+import { selectEnglish } from "./scripts/english.js";
 // Default values shown
 
 //scroll animation library
@@ -12,6 +13,7 @@ AOS.init();
 
 selectItalian();
 selectHungarian();
+selectEnglish();
 
 //typewriter effect for the welcome page
 const initTypewriter = () => {
