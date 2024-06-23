@@ -1,12 +1,12 @@
 import { writeLoop, setElement, stopWriteLoop, sleep } from "./typewriter.js";
 import { selectItalian } from "./italian.js";
 import { selectHungarian } from "./hungarian.js";
+import { attachEventListeners } from "./sideBar.js";
 
 const hobbySection = document.querySelector(".hobbies-section");
 
 // Save the original content of the sections
 const originalContent = {};
-
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize originalContent when the DOM is fully loaded
   originalContent.section1 = document.getElementById("section1").innerHTML;
@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
   originalContent.section7 = document.getElementById("contact").innerHTML;
 
   // Initialize the English selection functionality
+  attachEventListeners();
+
   selectEnglish();
 });
 
@@ -50,6 +52,7 @@ function selectEnglish() {
       ];
 
       writeLoop(phrases);
+      attachEventListeners();
       selectItalian();
       selectHungarian();
     });

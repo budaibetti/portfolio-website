@@ -11,9 +11,13 @@ import { selectEnglish } from "./scripts/english.js";
 //scroll animation library
 AOS.init();
 
+//language selection
 selectItalian();
 selectHungarian();
 selectEnglish();
+
+//sidebar functions
+attachEventListeners();
 
 //typewriter effect for the welcome page
 const initTypewriter = () => {
@@ -40,9 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
 //Swipe effect for the travel pictures
 swipeLeft();
 swipeRight();
-
-//sidebar functions
-attachEventListeners();
 
 //Work experience counter
 

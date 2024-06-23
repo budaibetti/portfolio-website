@@ -31,19 +31,19 @@ function selectHungarian() {
           </a>
         </li>
         <li>
-          <a href="#about">
+          <a href="#about" class="sidebarEl">
             <i class="fa-solid fa-address-card"></i>
             Rólam
         </a>
         </li>
         <li>
-          <a href="#portfolio">
+          <a href="#portfolio" class="sidebarEl">
             <i class="fa-solid fa-briefcase"></i>
             Portfolio
         </a>
         </li>
         <li>
-          <a href="#contact">
+          <a href="#contact" class="sidebarEl">
             <i class="fa-solid fa-envelope"></i>
             Kapcsolat
         </a>
@@ -61,8 +61,8 @@ function selectHungarian() {
   
     <div class="expandable-elements">
         <ul class="expandable-language-list">
-              <li id="expandable-language-two" class="expandable-element enSelected">Angol</li>
-              <li id="expandable-language-three" class="expandable-language-element itSelected">Olasz</li>
+              <li id="expandable-language-two" class="expandable-element enSelected expandEl">Angol</li>
+              <li id="expandable-language-three" class="expandable-language-element expandEl itSelected">Olasz</li>
            </ul>
         </div>
             

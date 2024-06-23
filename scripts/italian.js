@@ -27,19 +27,19 @@ function selectItalian() {
           </a>
         </li>
         <li>
-          <a href="#about">
+          <a href="#about" class="sidebarEl">
             <i class="fa-solid fa-address-card"></i>
             Informazioni
         </a>
         </li>
         <li>
-          <a href="#portfolio">
+          <a href="#portfolio" class="sidebarEl">
             <i class="fa-solid fa-briefcase"></i>
             Portfolio
         </a>
         </li>
         <li>
-          <a href="#contact">
+          <a href="#contact" class="sidebarEl">
             <i class="fa-solid fa-envelope"></i>
             Contatti
         </a>
@@ -57,8 +57,8 @@ function selectItalian() {
   
     <div class="expandable-elements">
         <ul class="expandable-language-list">
-              <li id="expandable-language-two" class="expandable-element enSelected">Inglese</li>
-              <li id="expandable-language-three" class="expandable-language-element huSelected">Ungherese</li>
+              <li id="expandable-language-two" class="expandable-element expandEl enSelected">Inglese</li>
+              <li id="expandable-language-three" class="expandable-language-element  expandEl huSelected">Ungherese</li>
            </ul>
         </div>
             
