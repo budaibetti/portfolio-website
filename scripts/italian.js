@@ -12,6 +12,8 @@ const hobby = document.querySelector(".hobby");
 const portfolioPage = document.getElementById("portfolio");
 const contactPage = document.getElementById("contact");
 
+let selectedEn = false;
+
 function selectItalian() {
   const selectIt = document.querySelectorAll(".itSelected");
   selectIt.forEach((itelement) =>
