@@ -3,13 +3,12 @@ import { writeLoop, setElement, stopWriteLoop, sleep } from "./typewriter.js";
 import { addCounter } from "./counter.js";
 import { emailDelivery } from "./email.js";
 import { selectHungarian } from "./hungarian.js";
-import { selectEnglish } from "./english.js";
+import { selectEnglish, hobbySection } from "./english.js";
+import { swipeEffect } from "./swipe.js";
 
 const navBar = document.getElementById("section1");
 const welcomePage = document.querySelector(".welcome-page");
 const aboutPage = document.getElementById("about");
-const workExperience = document.querySelector(".work-experience-counter");
-const hobby = document.querySelector(".hobby");
 const portfolioPage = document.getElementById("portfolio");
 const contactPage = document.getElementById("contact");
 
@@ -197,7 +196,10 @@ function selectItalian() {
           Questa esperienza diversificata mi ha dotato di un ampio repertorio di competenze e di un approccio adattabile alla traduzione.</p>
 
       </div>`;
-      workExperience.innerHTML = `
+      hobbySection.innerHTML = ` <div 
+      data-aos="zoom-out-up"
+      data-aos-duration="1500"
+      class="work-experience-counter">
          <div class="work-experience-title">
         <h2> <span class="current-workplace">Attuale posto di lavoro</span> <br> Tech Mahindra - Team <span class="team-name">Italiano</span> </h2><br>
         <h3>Lavoro qui da</h3>
@@ -227,16 +229,72 @@ function selectItalian() {
               <li>Consumato<span class= "activity-number"> 10K+ </span> caffè</li>
             </ul>
            </div>
-          
-      `;
-      addCounter();
-      hobby.innerHTML = `
+          </div>
+        
+      <div data-aos="fade-right"
+      data-aos-duration="1000"
+      class="hobby">
     <h3>Interessi</h3>
         <ul class="hobbies-list">
           <li class="hobby-list"> Fare coding</li>
           <li class="hobby-list">Yoga</li>
           <li class="hobby-list">Viaggiare</li>
         </ul>
+                
+      </div>
+      <div  class="photo-swipe">
+
+      <div class="photo-group">
+
+      <div class="travel-cards" data-index="0" data-status="active">
+        <div class="travel-photo"></div>
+        <div class="travel-photo"></div>
+        <div class="travel-photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="1" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="2" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="3" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="4" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+    </div>
+
+  <div class="like-dislike-btn">
+
+    <button id="dislike-btn">
+      <i class="fa-solid fa-x"></i>
+    </button>
+
+    <button id="like-btn" class="like-btn">
+      <i class="fa-solid fa-heart"></i>
+    </button>
+
+  </div>
+  </div> 
     `;
       portfolioPage.innerHTML = `
      <h2 class="projects-title">I miei progetti </h2>
@@ -404,6 +462,8 @@ function selectItalian() {
         "una fanatica delle lingue",
       ];
       writeLoop(itPhrases);
+      addCounter();
+      swipeEffect();
       emailDelivery();
       selectHungarian();
       selectEnglish();
@@ -416,8 +476,6 @@ export {
   navBar,
   aboutPage,
   welcomePage,
-  workExperience,
-  hobby,
   portfolioPage,
   contactPage,
 };

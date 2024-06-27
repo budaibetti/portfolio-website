@@ -2,12 +2,10 @@ import { attachEventListeners } from "./sideBar.js";
 import { writeLoop, setElement, stopWriteLoop, sleep } from "./typewriter.js";
 import { addCounter } from "./counter.js";
 import { emailDelivery } from "./email.js";
-import { selectEnglish } from "./english.js";
+import { selectEnglish, hobbySection } from "./english.js";
 import {
   navBar,
   aboutPage,
-  workExperience,
-  hobby,
   portfolioPage,
   contactPage,
   welcomePage,
@@ -201,7 +199,11 @@ function selectHungarian() {
          </p>
 
      </div>`;
-      workExperience.innerHTML = `
+      hobbySection.innerHTML = `
+      <div 
+      data-aos="zoom-out-up"
+      data-aos-duration="1500"
+      class="work-experience-counter">
      <div class="work-experience-title">
     <h2> <span class="current-workplace">Jelenlegi munkahely</span> <br> Tech Mahindra - <span class="team-name">Olasz</span>Team </h2><br>
     <h3>Ennyi ideje dolgozom itt:</h3>
@@ -231,16 +233,73 @@ function selectHungarian() {
           <li><span class= "activity-number"> 10K+ </span> kávét fogyasztottam el</li>
         </ul>
        </div>
-      
-  `;
-      addCounter();
-      hobby.innerHTML = `
+      </div>
+  
+    <div data-aos="fade-right"
+      data-aos-duration="1000"
+      class="hobby">
     <h3>Hobbijaim</h3>
         <ul class="hobbies-list">
           <li class="hobby-list"> Programozás</li>
           <li class="hobby-list">Jóga</li>
           <li class="hobby-list">Utazás</li>
         </ul>
+  </div>
+
+  <div  class="photo-swipe">
+
+      <div class="photo-group">
+
+      <div class="travel-cards" data-index="0" data-status="active">
+        <div class="travel-photo"></div>
+        <div class="travel-photo"></div>
+        <div class="travel-photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="1" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="2" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="3" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+      <div class="travel-cards" data-index="4" data-status="unknown">
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+        <div class="travel-photo photo"></div>
+
+      </div>
+
+    </div>
+
+  <div class="like-dislike-btn">
+
+    <button id="dislike-btn">
+      <i class="fa-solid fa-x"></i>
+    </button>
+
+    <button id="like-btn" class="like-btn">
+      <i class="fa-solid fa-heart"></i>
+    </button>
+
+  </div>
+  </div> 
+
     `;
       portfolioPage.innerHTML = `
      <h2 class="projects-title hu-prj-title">Munkáim </h2>
@@ -411,6 +470,7 @@ function selectHungarian() {
         "Nyelvfanatikus",
       ];
       writeLoop(huPhrases);
+      addCounter();
       emailDelivery();
       selectItalian();
       selectEnglish();

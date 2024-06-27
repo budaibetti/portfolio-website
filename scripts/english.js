@@ -2,6 +2,7 @@ import { writeLoop, setElement, stopWriteLoop, sleep } from "./typewriter.js";
 import { selectItalian } from "./italian.js";
 import { selectHungarian } from "./hungarian.js";
 import { attachEventListeners } from "./sideBar.js";
+import { swipeEffect } from "./swipe.js";
 
 const hobbySection = document.querySelector(".hobbies-section");
 
@@ -53,10 +54,11 @@ function selectEnglish() {
 
       writeLoop(phrases);
       attachEventListeners();
+      swipeEffect();
       selectItalian();
       selectHungarian();
     });
   });
 }
 
-export { selectEnglish };
+export { selectEnglish, hobbySection };

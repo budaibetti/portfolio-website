@@ -1,6 +1,6 @@
 import { addCounter } from "./scripts/counter.js";
 import { writeLoop, setElement, stopWriteLoop } from "./scripts/typewriter.js";
-import { swipeLeft, swipeRight } from "./scripts/swipe.js";
+import { swipeEffect } from "./scripts/swipe.js";
 import { attachEventListeners } from "./scripts/sideBar.js";
 import { emailDelivery } from "./scripts/email.js";
 import { selectItalian } from "./scripts/italian.js";
@@ -42,8 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //Swipe effect for the travel pictures
-swipeLeft();
-swipeRight();
+swipeEffect();
 
 //Work experience counter
 
