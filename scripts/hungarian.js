@@ -378,7 +378,7 @@ function selectHungarian() {
       <div class="button-container">
         <a href="./resume/Bettina Budai- CV.pdf" download="Bettina Budai-CV">
           <button class="download-cv-btn">
-            CV letöltése
+            Önéletrajz
             <i class="fa-solid fa-arrow-down"></i>
           </button>
         </a>
